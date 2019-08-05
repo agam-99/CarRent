@@ -62,7 +62,7 @@ margin:0;
 }
 .crossfade  figure {
 z-index:-3;
-  animation: imageAnimation 20s linear infinite 0s;
+  animation: imageAnimation 15s linear infinite ;
 
   backface-visibility: hidden;
 
@@ -92,7 +92,7 @@ z-index:-3;
  
 .crossfade  figure:nth-child(2) {
 
-  animation-delay: 4s;
+  animation-delay: 3s;
 
   background-image: url('../img/2.jpg');
 
@@ -102,7 +102,7 @@ z-index:-3;
 
 .crossfade  figure:nth-child(3) {
 
-  animation-delay: 8s;
+  animation-delay: 6s;
 
   background-image: url('../img/3.jpg');
 
@@ -112,7 +112,7 @@ z-index:-3;
 
 .crossfade  figure:nth-child(4) {
 
-  animation-delay: 12s;
+  animation-delay: 9s;
 
   background-image: url('../img/4.jpg');
 
@@ -122,7 +122,7 @@ z-index:-3;
 
 .crossfade > figure:nth-child(5) {
 
-  animation-delay: 16s;
+  animation-delay: 12s;
 
   background-image: url('../img/5.jpg');
 
@@ -132,14 +132,14 @@ z-index:-3;
 @keyframes
 
 imageAnimation {  0% {
-
+ 
  animation-timing-function: ease-in;
 
  opacity: 0;
 
 }
 
- 17% {
+ 25% {
 
  animation-timing-function: ease-out;
 
@@ -147,28 +147,25 @@ imageAnimation {  0% {
 
 }
 
- 25% {
+ 40% {
 
  opacity: 1
 }
 
- 50% {
+ 80% {
 
  opacity: 0
 
 }
 
- 100% {
 
- opacity: 0
-
-}
 
 }
 
   .navbar {
     overflow: hidden;
     z-index: 4;
+    height:5vmax;
    position: fixed;
    width:100vmax;
     background:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.842));
@@ -179,7 +176,9 @@ imageAnimation {  0% {
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding:1vmax 1vmax;
+    margin-top:1vmax;
+    margin-left: 1vmax;
     text-decoration: none;
   }
   
@@ -187,6 +186,11 @@ imageAnimation {  0% {
     float: right;
     overflow: hidden;
     color:white;
+    margin-top:1vmax;
+    padding-top:1vmax;
+   
+    margin-left: 2vmax;
+    margin-right:10vmax;
   }
   
   .dropdown .dropbtn {
@@ -194,12 +198,13 @@ imageAnimation {  0% {
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding-bottom: 1vmax;
+    
     background: inherit;
     margin: 0;
   }
   
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .navbar a:hover, .dropdown:hover  {
     background-color: red;
   }
   
@@ -217,7 +222,8 @@ imageAnimation {  0% {
   .dropdown-content a {
     float: none;
     color: black;
-    
+    left:0;
+    margin-left:0;
     padding: 12px 45vw;
     text-decoration: none;
     display: block;
@@ -319,7 +325,7 @@ option {
     background:transparent;
 }
 input[type=text],input[type=email],select{
-    border:2px solid rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
     color:rgb(255, 255, 255);
     border-radius: 4%;
     min-width:9vmax;
@@ -335,9 +341,9 @@ input[type=text],input[type=email],select{
     color:white;
   }
   select{
-    border:2px solid rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
  
-    border-radius: 4%;
+   
   
     max-width: 9vmax;
     
@@ -366,10 +372,10 @@ input[type=text],input[type=email],select{
   }
   .form-innercontainer{
     padding:3vmax;
-    border:1px solid grey;
+    
     display:flex;
     width: 54vw;
-   background: black;
+   background: rgba(0, 0, 0, 0.658);
   }
   .form-submit
   {   margin-left:1vw;
@@ -440,7 +446,7 @@ background-size:100% 150%;
   }
   .services
   {
-      padding:10vmax 20vmax;
+      /* padding:10vmax 20vmax; */
      max-width:100vmax;
      height:auto;
   }
@@ -450,26 +456,87 @@ background-size:100% 150%;
       display: flex;
       height:auto;
   }
-  .each-service-img{
+  .flipcontainer {
+    perspective: 2000px;
+  }
+    /* flip the pane when hovered */
+    .flipcontainer:hover .flipper {
+      transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+    }
+  .flipcontainer{
+    
+    min-width: 29vmax;
+    max-width:29vmax;
+    min-height:20vmax;
+  }
+  
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+  
+    position: relative;
+  }
+  
+  /* hide back of pane during swap */
+  .each-service-img, .each-service-desc-desc {
+    backface-visibility: hidden;
+   
+    position: absolute;
+  
+  }
+  
+  /* front pane, placed above back */
+  .each-service-img {
+    z-index: 5;
+    min-width: 29vmax;
+    max-width:29vmax;
+    min-height:20vmax;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+  }
+  
+  /* back, initially hidden pane */
+  .each-service-desc-desc {
+    padding-top:5vmax;
+    text-align: center;
+    z-index:3;
+    min-width: 29vmax;
+    max-width:29vmax;
+    min-height:20vmax;
+   
+    
+    background:transparent;
+    transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
+  
+  /* .each-service-img{
       min-width:29vmax;
       max-width: 29vmax;
       height: 20vmax;
-  }
+  } */
   .each-service-desc
   {
       min-width:29vmax;
       max-width: 29vmax;
       height:20vmax;
-  }
+      justify-items: center;
+    }
   .each-service-desc-title
   {   
-      margin-top: 3vmax;
+   
       font-size:2rem;
       text-align: center;
       color:rgb(236, 233, 8);
   }
-  .each-service-desc-desc
+  /* .each-service-desc-desc
   {
       padding-left:2vmax;
       padding-right: 2vmax;
-  }
+  } */
