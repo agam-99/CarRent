@@ -335,16 +335,28 @@ input[type=text],input[type=email],select{
     color:white;
   }
   select{
+    border:2px solid rgb(255, 255, 255);
+ 
+    border-radius: 4%;
+  
+    max-width: 9vmax;
+    
+    padding-left:1%;
+    background: transparent;
+
       min-width:9vmax;
       min-height:2.3vmax;
-     color:white;
-     background:transparent;
+     color:rgb(255, 255, 255);
+   
     
   }
-  select::after
-  {
-    background: black;
+  option{
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+    padding-top:10px;
   }
+
+  
  
   .formcontainer
   {  margin-top:5vmax;
