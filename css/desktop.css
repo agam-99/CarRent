@@ -399,10 +399,7 @@ input[type=text],input[type=email],select{
       background:rgb(199, 196, 17); ;
       border:2px solid rgb(196, 193, 21);
   }
-  .undersubtitles
-  {
-      display:flex;
-  }
+ 
   .subtitles{
  padding-top:5vmax;
  padding-bottom:3vmax;
@@ -415,7 +412,7 @@ background-size:100% 150%;
       text-align: center;
   }
   .undersubtitles{
-      color:white;
+      color:rgb(196, 199, 46);
       display: flex;
   }
 .hrleft{
@@ -444,12 +441,22 @@ background-size:100% 150%;
   { color: white;
       text-align: center;
   }
-  .services
-  {
+  .services{
+ padding:10vmax 0 0  4vmax;
+  }
+  .services1
+  { display:flex;
       /* padding:10vmax 20vmax; */
      max-width:100vmax;
      height:auto;
   }
+  .services2
+  { display:flex;
+      /* padding:10vmax 20vmax; */
+     max-width:100vmax;
+     height:auto;
+  }
+
 
   .each-service
   {  
@@ -457,7 +464,7 @@ background-size:100% 150%;
       height:auto;
   }
   .flipcontainer {
-    perspective: 2000px;
+    perspective: 1000px;
   }
     /* flip the pane when hovered */
     .flipcontainer:hover .flipper {
@@ -467,9 +474,9 @@ background-size:100% 150%;
     }
   .flipcontainer{
     
-    min-width: 29vmax;
-    max-width:29vmax;
-    min-height:20vmax;
+    min-width: 15vmax;
+    max-width:15vmax;
+    min-height:12vmax;
   }
   
   /* flip speed goes here */
@@ -481,7 +488,7 @@ background-size:100% 150%;
   }
   
   /* hide back of pane during swap */
-  .each-service-img, .each-service-desc-desc {
+  .each-service-logo, .each-service-desc-desc {
     backface-visibility: hidden;
    
     position: absolute;
@@ -489,43 +496,55 @@ background-size:100% 150%;
   }
   
   /* front pane, placed above back */
-  .each-service-img {
+  .each-service-logo {
     z-index: 5;
-    min-width: 29vmax;
-    max-width:29vmax;
-    min-height:20vmax;
+    min-width: 15vmax;
+    max-width:15vmax;
+    min-height:12vmax;
     /* for firefox 31 */
     transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
   }
-  
+  .logo{
+    padding:25% 40%;
+    color:rgb(241, 245, 12);
+    min-height:4.5vmax;
+    max-height: 4.5vmax;
+  }
   /* back, initially hidden pane */
   .each-service-desc-desc {
-    padding-top:5vmax;
+    padding-top:1vmax;
     text-align: center;
     z-index:3;
-    min-width: 29vmax;
-    max-width:29vmax;
-    min-height:20vmax;
-   
+    min-width: 15vmax;
+    max-width:15vmax;
+    min-height:11vmax;
+    color:rgb(164, 167, 24);
+   border:1px solid rgb(241, 245, 12);
     
     background:transparent;
     transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
   }
+  .each-service-img
+  {
+    min-width:15vmax;
+    max-width:15vmax;
+    min-height: 12vmax;
+  }
   
-  /* .each-service-img{
+  /* .each-service-logo{
       min-width:29vmax;
       max-width: 29vmax;
       height: 20vmax;
   } */
   .each-service-desc
   {
-      min-width:29vmax;
-      max-width: 29vmax;
-      height:20vmax;
+      min-width:15vmax;
+      max-width: 15vmax;
+      height:12vmax;
       justify-items: center;
     }
   .each-service-desc-title
