@@ -6,12 +6,166 @@ body {margin:0;
   {
   color:white;
   }
-  .home-top{
-    background-image:linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0,0.5)),url("../img/hometop-bg.jpg");
+  .hometop{
+    /* background-image:linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0,0.5)),url("../img/hometop-bg.jpg"); */
     width:100%;
+    height:100vh;
     display:block;
-    background-size: cover;
+    /* background-size: cover; */
   }
+  /* .flip-container {
+	perspective: 1000px;
+}
+	 flip the pane when hovered 
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {border:2px black solid;
+	width: 320px;
+	height: 480px;
+}
+
+ flip speed goes here 
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+hide back of pane during swap 
+.front, .back {
+	text-align: center;
+	backface-visibility: hidden;
+
+	position: absolute;
+	
+}
+
+front pane, placed above back 
+.front {
+	z-index: 2;
+	
+	transform: rotateY(0deg);
+}
+
+ back, initially hidden pane 
+.back {
+	transform: rotateY(180deg);
+} */
+.crossfade{
+padding:0;
+margin:0;
+ 
+  
+}
+.crossfade  figure {
+z-index:-3;
+  animation: imageAnimation 20s linear infinite 0s;
+
+  backface-visibility: hidden;
+
+  background-size: cover;
+
+  
+
+  color: transparent;
+
+  height: 100vh;
+  width:100vw;
+ margin:0;
+  left: 0px;
+
+  opacity: 0;
+
+  position: absolute;
+
+  top: 0px;
+
+  
+
+
+
+}
+.crossfade  figure:nth-child(1) { background-image: url('../img/1.jpg'); }
+ 
+.crossfade  figure:nth-child(2) {
+
+  animation-delay: 4s;
+
+  background-image: url('../img/2.jpg');
+
+}
+
+ 
+
+.crossfade  figure:nth-child(3) {
+
+  animation-delay: 8s;
+
+  background-image: url('../img/3.jpg');
+
+}
+
+ 
+
+.crossfade  figure:nth-child(4) {
+
+  animation-delay: 12s;
+
+  background-image: url('../img/4.jpg');
+
+}
+
+ 
+
+.crossfade > figure:nth-child(5) {
+
+  animation-delay: 16s;
+
+  background-image: url('../img/5.jpg');
+
+}
+
+
+@keyframes
+
+imageAnimation {  0% {
+
+ animation-timing-function: ease-in;
+
+ opacity: 0;
+
+}
+
+ 17% {
+
+ animation-timing-function: ease-out;
+
+ opacity: 1;
+
+}
+
+ 25% {
+
+ opacity: 1
+}
+
+ 50% {
+
+ opacity: 0
+
+}
+
+ 100% {
+
+ opacity: 0
+
+}
+
+}
+
   .navbar {
     overflow: hidden;
     z-index: 4;
@@ -125,17 +279,27 @@ option {
 .hometop-intro
 
 {   padding-top:10vmax;
-    margin-left:15vmax;
-    margin-right:5vmax;
-    max-width:40vmax;
-    color:white;
+   
+   
+    /* max-width:40vmax; */
+    color:rgb(44, 38, 38);
 }
 .hometop-intro h2
 {   margin:0;
-    font-size:3rem;
+  color:rgb(236, 233, 8);
+    font-size:4rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.hometop-intro p{
+  font-weight:bolder;
+  font-size:1.2rem;
+  text-align: center;
+  color:white;
 }
 .rentnow 
-{  width:12vmax;
+{  width:12vw;
+  margin-left:43vw;
     margin-top:5%;
     
 }
@@ -146,62 +310,76 @@ option {
        /* font-weight: lighter; */
     font-size:1.5rem;
     color:rgb(255, 255, 255);
-    background:rgb(206, 159, 7);
+    background:rgb(236, 233, 8);
 
 }
 /* .rentnow:hover*/ .rentnow h2:hover{ 
-    border:1px solid rgb(206, 159, 7);
-    color:rgb(206, 159, 7);
+    border:1px solid rgb(236, 233, 8);
+    color:rgb(236, 233, 8);
     background:transparent;
 }
 input[type=text],input[type=email],select{
-    border:2px solid grey;
-    color:rgb(168, 158, 158);
+    border:2px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
     border-radius: 4%;
-    min-width:8vmax;
-    max-height:3vmax;
-    padding-left:3%;
+    min-width:9vmax;
+    max-width: 9vmax;
+    max-height:2vmax;
+    padding-left:1%;
+    background: transparent;
     
-  margin-right:5%;
+  margin-right:1%;
+  }
+  input::placeholder
+  {
+    color:white;
   }
   select{
-      min-width:10vmax;
-      min-height:3.2vmax;
+      min-width:9vmax;
+      min-height:2.3vmax;
+     color:white;
+     background:transparent;
     
-    
+  }
+  select::after
+  {
+    background: black;
   }
  
   .formcontainer
   {  margin-top:5vmax;
-      padding:3vmax;
-   
-      max-width:30vmax;
+    margin-bottom: 5vmax;
+   margin-left:19vmax;
+      
   }
   .form-innercontainer{
     padding:3vmax;
     border:1px solid grey;
     display:flex;
+    width: 54vw;
+   background: black;
   }
   .form-submit
-  {  
-      min-width:15vmax;
-      padding:3% 0%;
-
-    background: rgb(206, 159, 7);
-    border:1px solid rgb(206, 159, 7);
+  {   margin-left:1vw;
+      min-width:10vmax;
+      padding: 0;
+      padding-top:0.5%;
+      padding-bottom: 0.5%;
+      /* max-height:2vmax; */
+    background: black;
     color: white;
-    border:0;
-    border-radius:5px;
+    border:1px solid white;
+  
   }
   .form-submit h4{
     font-size: 1rem;
-   
+ 
     margin: 0;
   }
   .form-submit:hover {
-      color: rgb(206, 159, 7);
-      background: transparent;
-      border:1px solid rgb(206, 159, 7);
+      color: white;
+      background:rgb(199, 196, 17); ;
+      border:2px solid rgb(196, 193, 21);
   }
   .undersubtitles
   {
@@ -276,7 +454,7 @@ background-size:100% 150%;
       margin-top: 3vmax;
       font-size:2rem;
       text-align: center;
-      color:rgb(206, 159, 7);
+      color:rgb(236, 233, 8);
   }
   .each-service-desc-desc
   {
