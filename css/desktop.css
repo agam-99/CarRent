@@ -690,6 +690,7 @@ input[type=text],input[type=email],select{
  }
  .card{
    padding:1vmax;
+   PADDING-TOP:2VMAX;
    background: transparent;
    min-width:20vmax;
    max-width:20vmax;
@@ -697,16 +698,25 @@ input[type=text],input[type=email],select{
   transition-duration: 0.3s;
   border:2px rgb(255, 255, 255) solid;
   color:rgb(255, 255, 255);
-  back
+  
   }
  .card h3{
    text-align: center;
+   margin:0;
+  
+   padding-left:2vmax;
  }
  .card p{
    text-align: center;
+  
   
   }
 .card:hover
 {
 transform: translate( -0.3vmax,-0.3vmax);
-box-shadow: 5px 5px 5px black;
+box-shadow: 5px 5px  black;
+}
+.card-title
+{ padding-left:3vmax;
+display: flex;
+}
