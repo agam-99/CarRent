@@ -1,7 +1,9 @@
 * {margin:0;
     padding:0;
     font-family: "Lato";
+    box-sizing: border-box;
   }
+ 
   h2
   {
   color:white;
@@ -51,11 +53,11 @@ front pane, placed above back
 .crossfade{
   padding:0;
   margin:0;
-   
     
   }
   .crossfade  figure {
-  z-index:-3;
+    z-index:-1;
+
     animation: imageAnimation 15s linear infinite ;
   
     backface-visibility: hidden;
@@ -66,7 +68,7 @@ front pane, placed above back
   
     color: transparent;
   
-    height: 120vh;
+    height: 100%;
     width:100%;
    margin:0;
    padding:0;
@@ -153,8 +155,8 @@ front pane, placed above back
   
   }
   
-  
-  
+} 
+/*   
   }
 
 
@@ -239,7 +241,7 @@ front pane, placed above back
 }
 .form-group {
     margin-bottom: 1rem;
-}
+} */
 
 /* *, *::before, *::after {
     box-sizing: border-box;
@@ -272,21 +274,17 @@ select {
 .hometop{
   background:linear-gradient(rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.719)); 
  width:100%;
- height:120vh;
- display:block;
+ height:100%;
+ top:0;
+ margin:0;
+ left:0;
+
  /* background-size: cover; */
 }
-.hometop-main
-{
-   
-    height:100%;
-    
-    background-size:100% 100%;
 
-}
 .hometop-intro
 
-{   padding-top:15vmax;
+{   padding-top:10vmax;
    
    
     /* max-width:40vmax; */
@@ -295,13 +293,13 @@ select {
 .hometop-intro h2
 {   margin:0;
   color:rgb(236, 233, 8);
-    font-size:4rem;
+    font-size:8rem;
     font-weight: bolder;
     text-align: center;
 }
 .hometop-intro p{
   font-weight:bolder;
-  font-size:1.2rem;
+  font-size:3.2rem;
   text-align: center;
   color:white;
 }
@@ -327,12 +325,12 @@ select {
     background:transparent;
 }
 input[type=text],input[type=email],select{
-    border:1px solid rgb(255, 255, 255);
+    border:2px solid rgb(255, 255, 255);
     color:rgb(255, 255, 255);
-    border-radius: 4%;
+  
     min-width:9vmax;
     max-width: 9vmax;
-    max-height:2vmax;
+    max-height:3vmax;
     padding-left:1%;
     background: transparent;
     
@@ -343,14 +341,14 @@ input[type=text],input[type=email],select{
     color:white;
   }
   select{
-    border:1px solid rgb(255, 255, 255);
+    border:2px solid rgb(255, 255, 255);
  
    
   
     max-width: 9vmax;
     
     padding-left:1%;
-    background: transparent;
+    background: white;
 
       min-width:9vmax;
       min-height:2.3vmax;
@@ -358,10 +356,14 @@ input[type=text],input[type=email],select{
    
     
   }
+  
+  
   option{
    
-    color:rgb(0, 0, 0);
-    padding-top:10px
+    color:rgb(255, 251, 251);
+    background: black;
+    /* margin-top:10px; */
+    font-weight: bolder;
   }
 
   
@@ -369,14 +371,15 @@ input[type=text],input[type=email],select{
   .formcontainer
   {  margin-top:10vmax;
     margin-bottom: 5vmax;
-   margin-left:19vmax;
+ margin-left: 22vw;
+ 
       
   }
   .form-innercontainer{
     padding:3vmax;
-    
+    margin:0;
     display:flex;
-    width: 54vw;
+    width: 55vw;
    background: rgba(0, 0, 0, 0.658);
   }
   .form-submit
@@ -392,7 +395,7 @@ input[type=text],input[type=email],select{
   
   }
   .form-submit h4{
-    font-size: 1rem;
+    font-size: 2rem;
  
     margin: 0;
   }
@@ -418,6 +421,7 @@ input[type=text],input[type=email],select{
   padding:0;
   margin:0;
   left:0;
+  top:0;
    
     
   }
@@ -433,7 +437,7 @@ input[type=text],input[type=email],select{
   
     color: transparent;
   
-    height: 120vh;
+    height: 150%;
     width:100%;
    margin:0;
     left: 0px;
@@ -522,6 +526,12 @@ input[type=text],input[type=email],select{
   
   
   }
+  .our-services{
+    height:135vh;
+
+ 
+ 
+  }
   .subtitles{
  padding-top:5vmax;
  padding-bottom:3vmax;
@@ -529,7 +539,7 @@ input[type=text],input[type=email],select{
 
   }
   .subtitles h2{
-      font-size:1.9rem;
+      font-size:2.9rem;
       color:white;
       text-align: center;
   }
@@ -540,7 +550,7 @@ input[type=text],input[type=email],select{
       margin-top:2vmax;
   }
 .hrleft{
-    
+      margin:0;
         min-width:3vw;
         height:0.4vh;
          /* margin-left:45vw;  */
@@ -553,11 +563,12 @@ input[type=text],input[type=email],select{
   }
   .hrright{
     min-width:3vw;
+    margin:0;
     height:0.4vh;
      /* margin-left:45vw;  */
      margin-left:1%;
      margin-right:45vw;
-   
+    
     background-color: rgb(255, 255, 255);
     border-radius: 3vw;
   }
@@ -565,42 +576,47 @@ input[type=text],input[type=email],select{
   { color: white;
       text-align: center;
   }
-  .services{
- padding:0vmax 0 0  4vmax;
-  }
-  .services1
-  { display:flex;
+  
+  .service{
+ /* padding:0vmax 0 0  4vmax; */
+ 
+ display:flex;
+
+
+justify-content: space-evenly;  
+}
+  .services
+  { 
       /* padding:10vmax 20vmax; */
-     max-width:100vmax;
-     height:auto;
+   z-index:0;
+     max-height:460px;
+     
+    
+     
   }
-  .services2
-  { display:flex;
-      /* padding:10vmax 20vmax; */
-     max-width:100vmax;
-     height:auto;
-  }
+  
 
 
   .each-service
   {  
       display: flex;
       height:auto;
+      margin-bottom:3vmax;
   }
   .flipcontainer {
     perspective: 1000px;
   }
     /* flip the pane when hovered */
-    .flipcontainer:hover .flipper {
+    .flipcontainer:hover  .flipper {
       transform: rotateY(180deg);
       -ms-transform: rotateY(180deg);
       -webkit-transform: rotateY(180deg);
     }
   .flipcontainer{
     
-    min-width: 15vmax;
-    max-width:15vmax;
-    min-height:12vmax;
+    min-width: 22vmax;
+    max-width:22vmax;
+    min-height:17vmax;
   }
   
   /* flip speed goes here */
@@ -622,19 +638,20 @@ input[type=text],input[type=email],select{
   /* front pane, placed above back */
   .each-service-logo {
     z-index: 5;
-    min-width: 15vmax;
-    max-width:15vmax;
-    min-height:12vmax;
+    min-width: 22vmax;
+    max-width:22vmax;
+    min-height:17vmax;
+    border:1px solid rgb(241, 245, 12);
     /* for firefox 31 */
     transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
   }
   .logo{
-    padding:25% 40%;
+    padding:15% 30%; 
     color:rgb(241, 245, 12);
-    min-height:4.5vmax;
-    max-height: 4.5vmax;
+    /* min-height:4.5vmax;
+    max-height: 4.5vmax; */
   }
   /* back, initially hidden pane */
   .each-service-desc-title
@@ -648,9 +665,9 @@ input[type=text],input[type=email],select{
     padding-top:2vmax;
     text-align: center;
     z-index:3;
-    min-width: 15vmax;
-    max-width:15vmax;
-    min-height:10vmax;
+    min-width: 22vmax;
+    max-width:22vmax;
+    min-height:17vmax;
     color:rgb(255, 255, 255);
    border:1px solid rgb(241, 245, 12);
     
@@ -660,14 +677,17 @@ input[type=text],input[type=email],select{
     -webkit-transform: rotateY(180deg);
   }
   .each-service-desc-desc p{
-    margin-top: 2vmax;
+    margin-top:10%;
+    padding: 0 20%;
+
+    
   }
-  .each-service-img
+  /* .each-service-img
   {
     min-width:15vmax;
     max-width:15vmax;
     max-height: 12vmax;
-  }
+  } */
   
   /* .each-service-logo{
       min-width:29vmax;
@@ -676,9 +696,9 @@ input[type=text],input[type=email],select{
   } */
   .each-service-desc
   {
-      min-width:15vmax;
-      max-width: 15vmax;
-      height:12vmax;
+      min-width:22vmax;
+      max-width: 22vmax;
+      height:17vmax;
       justify-items: center;
     }
  
@@ -688,19 +708,22 @@ input[type=text],input[type=email],select{
       padding-right: 2vmax;
   } */
  .whybest{
-   background: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.699));
-   height:120vh;
+  min-height:150vh;
+   background: linear-gradient(rgba(0, 0, 0, 0.562),rgba(0, 0, 0, 0.582));
+  
   }
  
  .cardwrapper{
- 
- margin-left:2.5vmax;
- margin-right: 5vmax; 
+ justify-content: space-evenly !important;
+  margin-left:5vmax;
+ margin-right: 2.5vmax;  
+
+  
  }
  .card{
    padding:1vmax;
-   margin-bottom:3vmax;
-   PADDING-TOP:2vmax;
+   
+   PADDING-TOP:3vmax;
    background: transparent;
  
     margin-bottom: 2vmax;
@@ -709,15 +732,24 @@ input[type=text],input[type=email],select{
   color:rgb(255, 255, 255);
   
   }
-  
- .card h3{
+  .card-title{
+    display: flex;
+    padding-left:1vmax;
+    
+  }
+ .card-title h3{
    text-align: center;
+   padding-left:2vmax;
+   text-decoration: underline;
+   
    margin:0;
 
    
  }
  .card p{
-   text-align: center;
+  margin-top:2vmax; 
+  text-align: center;
+
   
   
   }
@@ -725,4 +757,77 @@ input[type=text],input[type=email],select{
 {
 transform: translate( -0.5vmax,-0.5vmax);
 box-shadow: 0.5vmax 0.5vmax  rgba(0, 0, 0, 0.322);
+border:rgb(241, 245, 12) 2px solid;
+}
+.card:hover .card-title  {
+color:rgb(241, 245, 12);
+
+}
+.app-promo{
+  display:flex;
+  justify-content: space-evenly;
+}
+.app-promo-info h3{
+  
+  font-size: 7rem;
+  
+  font-weight:bold;
+  color: rgb(241, 245, 12)
+  
+}
+.app-promo-info
+{ text-align: center;
+width:40vw;
+  font-size:2.5rem;
+  margin-top:7vmax;
+  margin-bottom: 7vmax;
+}
+.app-promo-info p{
+  margin-bottom: 0;
+  margin-top: 0.5vh;
+}
+.app-promo-info-links
+{
+  margin-top:2vmax;
+justify-content: space-evenly;
+  display: flex;
+}
+.store{
+  background:black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+.app-link
+
+{ padding:7% 2vmax;
+  font-size: 2rem;
+  text-decoration: none;
+  color:white;
+  display: flex;
+}
+
+.app-link:hover{
+  text-decoration: none;
+  color:yellow;
+}
+.store:hover{
+  transform: scale(1.1);
+  /* box-shadow: 0 5px rgba(0, 0, 0, 0.308); */
+  background:white;
+  border:2px solid rgb(241, 245, 12);
+}
+.app-link p{
+  margin-left: 10px;
+}
+.mobile-app{
+  margin-top:5vmax;
+  height:55vh;
+  
+}
+nav{
+
+}
+.navbar{
+  position:fixed;
+  z-index:5;
 }
