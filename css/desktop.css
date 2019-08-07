@@ -6,13 +6,7 @@
   {
   color:white;
   }
-  .hometop{
-     background:linear-gradient(rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.719)); 
-    width:100%;
-    height:120vh;
-    display:block;
-    /* background-size: cover; */
-  }
+ 
   /* .flip-container {
 	perspective: 1000px;
 }
@@ -275,7 +269,13 @@ select {
     min-height: 1.2em;
     padding: 0px 2px 1px;
 }  */
-
+.hometop{
+  background:linear-gradient(rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.719)); 
+ width:100%;
+ height:120vh;
+ display:block;
+ /* background-size: cover; */
+}
 .hometop-main
 {
    
@@ -286,7 +286,7 @@ select {
 }
 .hometop-intro
 
-{   padding-top:10vmax;
+{   padding-top:15vmax;
    
    
     /* max-width:40vmax; */
@@ -367,7 +367,7 @@ input[type=text],input[type=email],select{
   
  
   .formcontainer
-  {  margin-top:5vmax;
+  {  margin-top:10vmax;
     margin-bottom: 5vmax;
    margin-left:19vmax;
       
@@ -537,6 +537,7 @@ input[type=text],input[type=email],select{
       color:rgb(196, 199, 46);
       display: flex;
       margin-bottom:5vmax;
+      margin-top:2vmax;
   }
 .hrleft{
     
@@ -636,13 +637,20 @@ input[type=text],input[type=email],select{
     max-height: 4.5vmax;
   }
   /* back, initially hidden pane */
+  .each-service-desc-title
+  {   
+   
+      font-size:2rem;
+      text-align: center;
+      color:rgb(236, 233, 8);
+  }
   .each-service-desc-desc {
-    padding-top:1vmax;
+    padding-top:2vmax;
     text-align: center;
     z-index:3;
     min-width: 15vmax;
     max-width:15vmax;
-    min-height:11vmax;
+    min-height:10vmax;
     color:rgb(255, 255, 255);
    border:1px solid rgb(241, 245, 12);
     
@@ -650,6 +658,9 @@ input[type=text],input[type=email],select{
     transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
+  }
+  .each-service-desc-desc p{
+    margin-top: 2vmax;
   }
   .each-service-img
   {
@@ -670,13 +681,7 @@ input[type=text],input[type=email],select{
       height:12vmax;
       justify-items: center;
     }
-  .each-service-desc-title
-  {   
-   
-      font-size:2rem;
-      text-align: center;
-      color:rgb(236, 233, 8);
-  }
+ 
   /* .each-service-desc-desc
   {
       padding-left:2vmax;
@@ -695,6 +700,7 @@ input[type=text],input[type=email],select{
  .cardwrapper{
   min-width:20vmax;
   max-width:20vmax;
+  
  }
  .card{
    padding:1vmax;
