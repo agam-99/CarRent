@@ -678,7 +678,11 @@ input[type=text],input[type=email],select{
       padding-left:2vmax;
       padding-right: 2vmax;
   } */
- .best
+ .whybest{
+   background: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.699));
+   height:120vh;
+  }
+  .best
  {  
    display:flex;
    justify-content: space-evenly; 
