@@ -691,34 +691,30 @@ input[type=text],input[type=email],select{
    background: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.699));
    height:120vh;
   }
-  .best
- {  
-   display:flex;
-   justify-content: space-evenly; 
-  
- }
+ 
  .cardwrapper{
-  min-width:20vmax;
-  max-width:20vmax;
-  
+ 
+ margin-left:2.5vmax;
+ margin-right: 5vmax; 
  }
  .card{
    padding:1vmax;
-   PADDING-TOP:2VMAX;
+   margin-bottom:3vmax;
+   PADDING-TOP:2vmax;
    background: transparent;
-   min-width:20vmax;
-   max-width:20vmax;
+ 
     margin-bottom: 2vmax;
   transition-duration: 0.3s;
   border:2px rgb(255, 255, 255) solid;
   color:rgb(255, 255, 255);
   
   }
+  
  .card h3{
    text-align: center;
    margin:0;
-  
-   padding-left:2vmax;
+
+   
  }
  .card p{
    text-align: center;
@@ -729,11 +725,4 @@ input[type=text],input[type=email],select{
 {
 transform: translate( -0.5vmax,-0.5vmax);
 box-shadow: 0.5vmax 0.5vmax  rgba(0, 0, 0, 0.322);
-}
-.card-title
-{ padding-left:3vmax;
-display: flex;
-}
-.card:hover .card-title  {
-  color:yellow;
 }
