@@ -1,6 +1,6 @@
-body {margin:0;
+* {margin:0;
     padding:0;
-    font-family: 'Lato';
+    font-family: "Lato";
   }
   h2
   {
@@ -9,7 +9,7 @@ body {margin:0;
   .hometop{
      background:linear-gradient(rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.719)); 
     width:100%;
-    height:100vh;
+    height:120vh;
     display:block;
     /* background-size: cover; */
   }
@@ -73,8 +73,9 @@ front pane, placed above back
     color: transparent;
   
     height: 120vh;
-    width:100vw;
+    width:100%;
    margin:0;
+   padding:0;
     left: 0px;
   
     opacity: 0;
@@ -164,11 +165,11 @@ front pane, placed above back
 
 
   .navbar {
-    overflow: hidden;
+    overflow-x: hidden;
     z-index: 4;
     height:5vmax;
    position: fixed;
-   width:100vmax;
+   width: 100%;
     background:linear-gradient(rgba(0, 0, 0, 0.342),rgba(0, 0, 0, 0.308));
   }
   
@@ -266,14 +267,14 @@ select {
     -webkit-rtl-ordering: logical;
     cursor: default;
     font: 400 13.3333px Arial;
-}
-option {
+}*/
+/* option {
     font-weight: normal;
     display: block;
     white-space: pre;
     min-height: 1.2em;
     padding: 0px 2px 1px;
-} */
+}  */
 
 .hometop-main
 {
@@ -358,9 +359,9 @@ input[type=text],input[type=email],select{
     
   }
   option{
-    font-weight: bolder;
+   
     color:rgb(0, 0, 0);
-    padding-top:10px;
+    padding-top:10px
   }
 
   
@@ -407,14 +408,16 @@ input[type=text],input[type=email],select{
  } 
  .section-spacing
  {
-   min-width:100vw;
+   min-width:100%;
+   left:0px;
    min-height:2vw;
    background-color:rgb(15, 14, 14);
-   border:10px black solid;
+   
  }
  .crossfade1{
   padding:0;
   margin:0;
+  left:0;
    
     
   }
@@ -431,7 +434,7 @@ input[type=text],input[type=email],select{
     color: transparent;
   
     height: 120vh;
-    width:100vw;
+    width:100%;
    margin:0;
     left: 0px;
   
