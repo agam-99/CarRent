@@ -72,7 +72,7 @@ front pane, placed above back
   
     color: transparent;
   
-    height: 100vh;
+    height: 120vh;
     width:100vw;
    margin:0;
     left: 0px;
@@ -401,7 +401,7 @@ input[type=text],input[type=email],select{
       border:2px solid rgb(196, 193, 21);
   }
   .our-services{
-  background: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.596)) ;
+  background: linear-gradient(rgba(0, 0, 0, 0.733),rgba(0, 0, 0, 0.719)) ;
   background-size:cover;
  } 
  .section-spacing
@@ -429,7 +429,7 @@ input[type=text],input[type=email],select{
   
     color: transparent;
   
-    height: 100vh;
+    height: 120vh;
     width:100vw;
    margin:0;
     left: 0px;
@@ -532,6 +532,7 @@ input[type=text],input[type=email],select{
   .undersubtitles{
       color:rgb(196, 199, 46);
       display: flex;
+      margin-bottom:5vmax;
   }
 .hrleft{
     
@@ -677,3 +678,32 @@ input[type=text],input[type=email],select{
       padding-left:2vmax;
       padding-right: 2vmax;
   } */
+ .best
+ {  
+   display:flex;
+   justify-content: space-evenly; 
+  
+ }
+ .cardwrapper{
+  min-width:20vmax;
+  max-width:20vmax;
+ }
+ .card{
+   padding:1vmax;
+   background: white;
+   min-width:20vmax;
+   max-width:20vmax;
+    margin-bottom: 2vmax;
+  transition-duration: 0.3s;
+  }
+ .card h3{
+   text-align: center;
+ }
+ .card p{
+   text-align: center;
+  
+  }
+.card:hover
+{
+transform: translate( -0.3vmax,-0.3vmax);
+box-shadow: 5px 5px 5px black;
