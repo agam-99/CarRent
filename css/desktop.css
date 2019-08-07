@@ -169,7 +169,7 @@ front pane, placed above back
     height:5vmax;
    position: fixed;
    width:100vmax;
-    background:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.842));
+    background:linear-gradient(rgba(0, 0, 0, 0.342),rgba(0, 0, 0, 0.308));
   }
   
   .navbar a {
@@ -690,11 +690,14 @@ input[type=text],input[type=email],select{
  }
  .card{
    padding:1vmax;
-   background: white;
+   background: transparent;
    min-width:20vmax;
    max-width:20vmax;
     margin-bottom: 2vmax;
   transition-duration: 0.3s;
+  border:2px rgb(255, 255, 255) solid;
+  color:rgb(255, 255, 255);
+  back
   }
  .card h3{
    text-align: center;
