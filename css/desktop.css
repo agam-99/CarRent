@@ -391,7 +391,7 @@ input[type=text],input[type=email],select{
       /* max-height:2vmax; */
     background: black;
     color: white;
-    border:1px solid white;
+    border:1px solid rgb(219, 199, 20);
   
   }
   .form-submit h4{
@@ -539,7 +539,7 @@ input[type=text],input[type=email],select{
 
   }
   .subtitles h2{
-      font-size:2.9rem;
+      font-size:3.9rem;
       color:white;
       text-align: center;
   }
@@ -641,7 +641,7 @@ justify-content: space-evenly;
     min-width: 22vmax;
     max-width:22vmax;
     min-height:17vmax;
-    border:1px solid rgb(241, 245, 12);
+    border:1px solid rgb(255, 255, 255);
     /* for firefox 31 */
     transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
@@ -717,6 +717,7 @@ justify-content: space-evenly;
  justify-content: space-evenly !important;
   margin-left:5vmax;
  margin-right: 2.5vmax;  
+ min-height:80vh;
 
   
  }
@@ -726,7 +727,7 @@ justify-content: space-evenly;
    PADDING-TOP:3vmax;
    background: transparent;
  
-    margin-bottom: 2vmax;
+    margin-bottom: 8vmax;
   transition-duration: 0.3s;
   border:2px rgb(255, 255, 255) solid;
   color:rgb(255, 255, 255);
@@ -766,6 +767,7 @@ color:rgb(241, 245, 12);
 .app-promo{
   display:flex;
   justify-content: space-evenly;
+  background: grey;
 }
 .app-promo-info h3{
   
@@ -789,32 +791,38 @@ width:40vw;
 .app-promo-info-links
 {
   margin-top:2vmax;
-justify-content: space-evenly;
+margin-left:3vmax;
   display: flex;
 }
 .store{
-  background:black;
-  border-radius: 10px;
+  background:transparent;
+  border-radius: 20px;
   transition-duration: 0.4s;
+  border:2px solid rgb(241, 245, 12);
+  margin-left:5vmax;
+
+ 
 }
 .app-link
 
-{ padding:7% 2vmax;
-  font-size: 2rem;
+{ padding:4% 1vmax;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
   color:white;
   display: flex;
 }
 
-.app-link:hover{
-  text-decoration: none;
-  color:yellow;
-}
+
 .store:hover{
   transform: scale(1.1);
   /* box-shadow: 0 5px rgba(0, 0, 0, 0.308); */
-  background:white;
-  border:2px solid rgb(241, 245, 12);
+  background:rgb(241, 245, 12);
+
+}
+.app-link:hover{
+  text-decoration: none;
+  color:white;
 }
 .app-link p{
   margin-left: 10px;
@@ -824,10 +832,14 @@ justify-content: space-evenly;
   height:55vh;
   
 }
-nav{
+/* nav{
 
 }
 .navbar{
   position:fixed;
   z-index:5;
+} */
+.footer-top{
+  justify-content: space-evenly;
+  display: flex;
 }
