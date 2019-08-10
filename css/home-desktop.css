@@ -18,7 +18,7 @@
   }
   
   .each-slide{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/car-service-1.png");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/home/car-service-1.png");
 height: 100%;
 width:100%;
 background-size:cover;
@@ -37,13 +37,13 @@ color:rgb(241, 245, 12);
     color:white;
   }
   .first-slide{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/car-service-1.png");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/home/car-service-1.png");
   }
   .second-slide{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/car-service-2.png");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/home/car-service-2.png");
   }
   .third-slide{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/car-service-3.png");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/home/car-service-3.png");
   }
    .carousel-container{
      margin-top: 7vh;
@@ -136,13 +136,13 @@ front pane, placed above back
   
   
   }
-  .crossfade  figure:nth-child(1) { background-image: url('../img/1.jpg'); }
+  .crossfade  figure:nth-child(1) { background-image: url('../img/home/1.jpg'); }
    
   .crossfade  figure:nth-child(2) {
   
     animation-delay: 3s;
   
-    background-image: url('../img/2.jpg');
+    background-image: url('../img/home/2.jpg');
   
   }
   
@@ -152,7 +152,7 @@ front pane, placed above back
   
     animation-delay: 6s;
   
-    background-image: url('../img/3.jpg');
+    background-image: url('../img/home/3.jpg');
   
   }
   
@@ -162,7 +162,7 @@ front pane, placed above back
   
     animation-delay: 9s;
   
-    background-image: url('../img/4.jpg');
+    background-image: url('../img/home/4.jpg');
   
   }
   
@@ -172,7 +172,7 @@ front pane, placed above back
   
     animation-delay: 12s;
   
-    background-image: url('../img/5.jpg');
+    background-image: url('../img/home/5.jpg');
   
   }
   
@@ -534,13 +534,13 @@ max-width:100%;
   
   
   }
-  .crossfade1  figure:nth-child(1) { background-image: url('../img/21.jpg'); }
+  .crossfade1  figure:nth-child(1) { background-image: url('../img/home/21.jpg'); }
    
   .crossfade1  figure:nth-child(2) {
   
     animation-delay: 3s;
   
-    background-image: url('../img/22.jpg');
+    background-image: url('../img/home/22.jpg');
   
   }
   
@@ -550,7 +550,7 @@ max-width:100%;
   
     animation-delay: 6s;
   
-    background-image: url('../img/23.jpg');
+    background-image: url('../img/home/23.jpg');
   
   }
   
@@ -560,7 +560,7 @@ max-width:100%;
   
     animation-delay: 9s;
   
-    background-image: url('../img/24.jpg');
+    background-image: url('../img/home/24.jpg');
   
   }
   
@@ -570,7 +570,7 @@ max-width:100%;
   
     animation-delay: 12s;
   
-    background-image: url('../img/25.jpg');
+    background-image: url('../img/home/25.jpg');
   
   }
   
@@ -841,13 +841,13 @@ justify-content: space-around;   */
     
     
     }
-    .crossfade2  figure:nth-child(1) { background-image: url('../img/1.jpg'); }
+    .crossfade2  figure:nth-child(1) { background-image: url('../img/home/1.jpg'); }
      
     .crossfade2  figure:nth-child(2) {
     
       animation-delay: 3s;
     
-      background-image: url('../img/2.jpg');
+      background-image: url('../img/home/2.jpg');
     
     }
     
@@ -857,7 +857,7 @@ justify-content: space-around;   */
     
       animation-delay: 6s;
     
-      background-image: url('../img/3.jpg');
+      background-image: url('../img/home/3.jpg');
     
     }
     
@@ -867,7 +867,7 @@ justify-content: space-around;   */
     
       animation-delay: 9s;
     
-      background-image: url('../img/4.jpg');
+      background-image: url('../img/home/4.jpg');
     
     }
     
@@ -877,7 +877,7 @@ justify-content: space-around;   */
     
       animation-delay: 12s;
     
-      background-image: url('../img/5.jpg');
+      background-image: url('../img/home/5.jpg');
     
     }
     
