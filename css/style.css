@@ -108,7 +108,9 @@ url("https://www.setaswall.com/wp-content/uploads/2017/12/Cool-Car-Wallpaper-30-
 }
 
 .counterMain {
-background-color: rgb(255, 255, 255);
+    padding-top:5vmax;
+    padding-bottom:5vmax;
+background:linear-gradient(black,white)
 }
 .counter {
     background:transparent;
@@ -127,7 +129,7 @@ background-color: rgb(255, 255, 255);
 
 .count-text {
     font-size: 13px;
-    color:rgb(192, 190, 45);
+    color:rgb(252, 252, 252);
     text-decoration: underline;
     font-weight: normal;
     margin-top: 10px;
@@ -152,7 +154,9 @@ background-color: rgb(255, 255, 255);
 background-color: yellow;
 transform:scale(1.2);
 }
-
+/* .testimonial-container{
+    background: linear-gradient(white,rgb(65, 198, 207));
+} */
 /* carousel */
 
 h2 {
@@ -195,7 +199,7 @@ h2::after {
 	margin: 0 auto;
 	padding: 5px;
 	border: 1px solid #ddd;
-	border-radius: 50%;
+	border-radius: 20%;
 }
 .carousel .img-box img {
 	width: 100%;

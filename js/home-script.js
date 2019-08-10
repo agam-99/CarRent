@@ -58,7 +58,7 @@ function marginset(class1,class2)
     var element2=document.querySelector(class2);
        element1.forEach((element)=>{
         var eleh=$(element2).height();
-        $(element).css('margin-top',(-1*eleh));
+        $(element).css('margin-top',(-1.2*eleh));
         console.log($(element2).height());
         console.log($(element).css('margin-top'));
        
