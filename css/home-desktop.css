@@ -434,10 +434,10 @@ max-width:100%;
       
   } 
   input[type="text"],input[type="tel"]{
-    border:2px solid rgb(22, 74, 172);
+    border:2px solid rgb(187, 187, 187);
   }
   #picklocation,#pickcar{
-    border:2px solid rgb(22, 74, 172);
+    border:2px solid rgb(182, 182, 182);
   }
   input[type="text"]::placeholder,input[type="tel"]::placeholder
   { 
@@ -630,6 +630,9 @@ max-width:100%;
       margin-bottom:5vmax;
       margin-top:2vmax;
   }
+.undersubtitles2 {
+    color:rgb(216, 151, 114)
+  }
 .hrleft{
       margin:0;
         min-width:3vw;
@@ -657,7 +660,7 @@ max-width:100%;
   }
   .our-services{
    z-index:0;
-    /* background:linear-gradient(rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.795));  */
+    background:linear-gradient(rgba(255, 254, 254, 0.74),rgba(95, 192, 236, 0.795));  
   
     max-width: 100vw;
   }
@@ -760,7 +763,7 @@ justify-content: space-around;   */
     /* min-width: 22vmax;
     max-width:22vmax;
     min-height:17vmax; */
-    color:rgb(46, 177, 230);
+    color:rgb(230, 46, 46);
   
    border:3px solid rgb(241, 245, 12); 
     
@@ -967,7 +970,7 @@ color:rgb(241, 245, 12);
   margin:0 !important;
   width:100%;
 
-  background: grey;
+  background:linear-gradient( rgb(255, 255, 255),rgb(94, 222, 245));
 }
 .app-promo-info h3{
   
@@ -1038,6 +1041,7 @@ justify-content: space-evenly;
 
 .footer-top{
   padding:3vw;
+
 }
 .list1 li, .list2  li{
 margin-top:2vh;
