@@ -9,51 +9,48 @@
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="css/desktop.css" rel="stylesheet" type=text/css> <title>Document</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
+ 
+ 
+      <!-- <div class="crossfade">
 
-  <div class="hometop">
-      <div class="crossfade">
-
-          <figure></figure>
+          <figure  class="crossfade-figure"></figure>
       
-          <figure></figure>
+          <figure1  class="crossfade-figure"></figure>
       
-          <figure></figure>
+          <figure  class="crossfade-figure"></figure>
       
-          <figure></figure>
+          <figure  class="crossfade-figure"></figure>
       
-          <figure></figure>
+          <figure class="crossfade-figure"></figure>
       
         </div>
+      -->
 
-
-    <!-- <div class="navbar">
-     <div class=drop>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown
-            <i class="fa fa-caret-down"></i>
+      <nav class="navbar fixed-top navbar-expand navbar-light bg-primary "style="max-width: 100vw">
+          <a class="navbar-brand text-light" href="#">Car-Eve</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>3</a>
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <ul class="nav navbar-nav navbar-right ">
+             <li><a class="nav-item nav-link active text-light" href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li>  <a class="nav-item nav-link text-light" href="#">Team</a></li>
+                <li>  <a class="nav-item nav-link text-light" href="#">About Us</a></li>
+                  <li> <a class="nav-item nav-link text-light" href="#">Contact</a></li>
+                    <li><a class="nav-item nav-link text-light" href="#">Cars</a> </li>
+             </ul> 
+           
           </div>
-        </div>
-      </div> 
-      <a href="#news">Contact Us</a>
-      <a href="#home">Cars</a>
-      <a href="#news">Team</a>
-      <a href="#news">About Us</a>
-      <a href="#home">Home</a>
-      
-      
-
-     
+        </nav>
    
 
-    </div> -->
-    <nav class="navbar navbar-inverse text-primary navbar-fixed-top"  style="background-color:rgba(255, 255, 255, 0.822)" >
+
+    <!-- <nav class="navbar navbar-inverse text-primary navbar-fixed-top"  style="background-color:rgba(255, 255, 255, 0.822)" >
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -64,17 +61,10 @@
             <a class="navbar-brand" href="#">Car Everything</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" style="color: rgb(206, 170, 13) " >Home</a></li>
-              <!-- <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Page 1-1</a></li>
-                  <li><a href="#">Page 1-2</a></li>
-                  <li><a href="#">Page 1-3</a></li>
-                </ul>
-              </li> -->
-              <li><a href="#"  style="color: rgb(206, 170, 13)" >About Us</a></li>
+            <ul class="nav navbar-nav navbar-right text-primary">
+              <li class="text-primary"><a href="#" style="color: rgb(0, 0, 0) " >Home</a></li>
+          
+              <li><a href="#"  style="color: rgb(0, 0, 0)" >About Us</a></li>
               <li><a href="#"  style="color: rgb(206, 170, 13)" >Team</a></li>
               <li><a href="#"  style="color: rgb(206, 170, 13)" >Cars</a></li>
               <li><a href="#"  style="color: rgb(206, 170, 13)" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -83,26 +73,67 @@
           
           </div>
         </div>
-      </nav>
-    <div class="hometop-main">
+      </nav> -->
+      <div class="carousel-container">
+      <div class="col-lg-12"></div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="each-slide first-slide bg-primary d-block  mx-auto" >
+                <h1 class="col-lg-6 font-weight-bold">BOOK A CAR TODAY !</h1>
+              <p class=col-lg-8>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti inventore temporibus ipsam praesentium expedita. Exercitationem?</p>
+              </div>
+              <!-- <div class="carousel-caption d-none d-block">
+                  <h1>ABCD</h1>
+                  <p>abc</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <div class="each-slide second-slide bg-primary d-block  mx-auto" >
+                    <h1 class="col-lg-6 font-weight-bold">SAVE YOUR MONEY !</h1>
+                  <p class=col-lg-8>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti inventore temporibus ipsam praesentium expedita. Exercitationem?</p>
+                  </div>
+                  <!-- <div class="carousel-caption d-none d-block">
+                      <h1>ABCD</h1>
+                      <p>abc</p>
+                    </div> -->
+            </div>
+            <div class="carousel-item">
+                <div class="each-slide third-slide bg-primary d-block  mx-auto" >
+                    <h1 class="col-lg-6 font-weight-bold">ENJOY YOUR JOURNEY !</h1>
+                  <p class=col-lg-8>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti inventore temporibus ipsam praesentium expedita. Exercitationem?</p>
+                  </div>
+                  <!-- <div class="carousel-caption d-none d-block">
+                      <h1>ABCD</h1>
+                      <p>abc</p>
+                    </div> -->
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" display="none" aria-hidden="true"></span> -->
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <!-- <span class="carousel-control-next-icon" display="none" aria-hidden="true"></span> -->
+             <span class="sr-only">Next</span>
+          </a>
+        </div>
 
-      <div class="hometop-intro">
+  </div>
+    
 
-        <h2>BOOK A CAR TODAY!</h2>
-        <p>`FOR AS LOW AS $10 A DAY PLUS 15% DISCOUNT <br />
-          FOR OUR RETURNING CUSTOMERS`
+     
 
-
-        </p>
-
-      </div>
-
-
-      <div class="formcontainer">
-
+    
+ <div class=form-container>
         <div class="form-innercontainer">
 
-          <input type="text" name="Name" placeholder="PICK DATE" required>
+          <!-- <input type="text" name="Name" placeholder="PICK DATE" required>
 
           <input type="text" name="Name" placeholder="YOUR NAME" required>
           <input type="email" name="email" placeholder="YOUR EMAIL" required>
@@ -120,51 +151,83 @@
 
           <button href=# type="submit" class="form-submit">
             <h4>Book Now!</h4>
-          </button>
+          </button> -->
 
+       
+        <form class="form-inline justify-content-around" action="/action_page.php">
+          <input type="Name" class="form-control bg-transparent text-light" width="100%" placeholder="Name" name="Name">
+ <select id="picklocation" placeholder="Pick Location" class="form-control bg-transparent">
+              <option class="text-dark bg-transparent font-weight-lighter" selected disabled>Pick Location</option>
+              <option class="text-dark bg-transparent font-weight-lighter">Delhi</option>
+              <option class="text-dark bg-white font-weight-lighter">Noida</option>     
+              <option class="text-dark bg-white font-weight-lighter">Gurugram</option>
+
+ <input type="tel" class="form-control bg-transparent"  placeholder="Contact No" name="contact">
+
+  <select id="pickcar" placeholder="Choose Car" class="form-control bg-transparent">
+                <option class="text-dark bg-white font-weight-lighter" selected disabled>Choose Car</option>
+                <option class="text-dark bg-white font-weight-lighter">Mercedes</option>
+                <option class="text-dark bg-white font-weight-lighter">Audi</option>     
+                <option class="text-dark bg-white font-weight-lighter">BMW</option>
+              </select>
+
+          <button type="submit" class="btn btn-transparent  bg-transparent text-danger">Book Now</button>
+        </form> 
+      </div> 
+    </div>
+      
+      <!-- <div class="hometop-intro">
+
+          <h2>BOOK A CAR TODAY!</h2>
+          <p>`FOR AS LOW AS $10 A DAY PLUS 15% DISCOUNT <br />
+            FOR OUR RETURNING CUSTOMERS`
+  
+  
+          </p>
+  
         </div>
-      </div>
-    </div>
-  </div>
-  <div class=section-spacing></div>
-  <div class=our-services>
-    <div class="crossfade1">
+   -->
+  
+  
+  <!-- <div class=section-spacing></div> -->
+  <div class= "our-services">
+     <!-- <div class="crossfade1">
 
-      <figure></figure>
+      <figure class="crossfade1-figure"></figure>
 
-      <figure></figure>
+      <figure class="crossfade1-figure"></figure>
 
-      <figure></figure>
+      <figure class="crossfade1-figure"></figure>
 
-      <figure></figure>
+      <figure class="crossfade1-figure"></figure>
 
-      <figure></figure>
+      <figure class="crossfade1-figure"></figure>
 
-    </div>
-    <div class="subtitles">
+    </div>  -->
+    <div class="subtitles text-center">
       <h2>OUR SERVICES </h2>
-      <div class="undersubtitles">
+      <div class="undersubtitles d-flex justify-content-center">
         <hr class=hrleft><i class="fa fa-2x fa-car" aria-hidden="true"></i>
         <hr class=hrright>
       </div>
       <p class=undersubtitles2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, eos.</p>
     </div>
-    <div class=service>
-      <div class="services">
-          <div class=each-service>
+    <div class="row service d-flex justify-content-around  ">
+      <div class="col-lg-3 col-md-6 col-sm-12 services">
+          <div class="col-lg-12 col-md-12 col-sm-12  each-service">
          
-              <div class="flipcontainer" >
+              <div class="col-lg-12 col-md-12 col-sm-12 flipcontainer">
                 <div class="flipper">
     
-                  <div class="each-service-logo">
-                    <div class=logo>
-                      <i class="fas fa-9x fa-car-crash"></i>
+                  <div class="col-lg-12 col-md-12 col-sm-12 each-service-logo">
+                    <div class="col-lg-12 col-md-12 col-sm-12 logo mx-auto text-center mx-auto pt-20 pb-6">
+                      <i class="fas fa-9x fa-car-crash"></i> <h3>
+                          CAR INSURANCE
+                        </h3>
                     </div>
                   </div>
-                  <div class="each-service-desc-desc">
-                    <h3>
-                      CAR INSURANCE
-                    </h3>
+                  <div class="col-lg-12 col-md-12 col-sm-12 each-service-desc-desc text-center">
+                   
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, unde?
                     </p>
@@ -176,15 +239,15 @@
     
     
             </div>
-        <div class=each-service>
-            <div class="flipcontainer" ontouchstart="this.classList.toggle('hover')">
+        <div class= "col-lg-12 col-md-12 col-sm-12 each-service">
+            <div class=" col-lg-12 col-md-12 col-sm-12 flipcontainer">
               <div class="flipper">
-                <div class="each-service-logo">
-                  <div class=logo><i class="fas fa-9x fa-cog"></i></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 each-service-logo">
+                  <div class="col-lg-12 col-md-12 col-sm-12 logo text-center mx-auto"><i class="fas fa-9x fa-cog"></i>      <h3>CAR REPAIR</h3></div>
                 </div>
   
-                <div class="each-service-desc-desc">
-                  <h3>CAR REPAIR</h3>
+                <div class="each-service-desc-desc col-lg-12 col-md-12 col-sm-12 text-center">
+            
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, sunt!</p>
                 </div>
   
@@ -197,23 +260,23 @@
           </div>
         
       </div>
-      <div class=services>
+      <div class="col-lg-3 col-md-6 col-sm-12 services">
 
-          <div class=each-service>
+          <div class="col-lg-12 col-md-12 col-sm-12  each-service">
               
-              <div class="flipcontainer" ontouchstart="this.classList.toggle('hover')">
+              <div class="col-lg-12 col-md-12 col-sm-12 flipcontainer" >
                 <div class="flipper">
     
-                  <div class="each-service-logo">
-                    <div class=logo>
-                      <i class="fas fa-9x fa-bath"></i>
+                  <div class="col-lg-12 col-md-12 col-sm-12 each-service-logo">
+                    <div class= "col-lg-12 col-md-12 col-sm-12 logo text-center mx-auto">
+                      <i class="fas fa-9x fa-bath"></i>   <h3>
+                          CAR WASH
+                        </h3>
                     </div>
                   </div>
-                  <div class="each-service-desc-desc">
-                    <h3>
-                      CAR WASH
-                    </h3>
-                    <p>
+                  <div class="col-lg-12 col-md-12 col-sm-12 each-service-desc-desc text-center">
+                 
+                    <p >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, unde?
                     </p>
                   </div>
@@ -224,16 +287,16 @@
     
     
             </div>
-        <div class=each-service>
-          <div class="flipcontainer" ontouchstart="this.classList.toggle('hover')">
+        <div class="col-lg-12 col-md-12 col-sm-12  each-service">
+          <div class="col-lg-12 col-md-12 col-sm-12 flipcontainer" ontouchstart="this.classList.toggle('hover')">
             <div class="flipper">
-              <div class="each-service-logo">
-                <div class=logo><i class="fas fa-9x fa-taxi"></i></div>
+              <div class="col-lg-12 col-md-12 col-sm-12 each-service-logo">
+                <div class="col-lg-12 col-md-12 col-sm-12 logo text-center mx-auto"><i class="fas fa-9x fa-taxi"></i> <h3>TAXI SERVICE</h3></div>
               </div>
 
 
-              <div class="each-service-desc-desc">
-                <h3>TAXI SERVICE</h3>
+              <div class="each-service-desc-desc col-lg-12 col-md-12 col-sm-12 text-center">
+               
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, voluptatem!</p>
               </div>
 
@@ -248,20 +311,20 @@
         
 
       </div>
-      <div class=services>
-          <div class=each-service>
-              <div class="flipcontainer" ontouchstart="this.classList.toggle('hover')">
+      <div class="col-lg-3 col-md-6 col-sm-12 services">
+          <div class="col-lg-12 col-md-12 col-sm-12  each-service">
+              <div class="flipcontainer col-lg-12 col-md-12 col-sm-12">
                 <div class="flipper">
     
-                  <div class="each-service-logo">
-                    <div class=logo>
-                        <i class="fas fa-9x fa-car-alt"></i>
+                  <div class="col-lg-12 col-md-12 col-sm-12 each-service-logo">
+                    <div class="col-lg-12 col-md-12 col-sm-12 logo text-center mx-auto">
+                        <i class="fas fa-9x fa-car-alt"></i> <h3>
+                            CAR RENTAL
+                          </h3>
                     </div>
                   </div>
-                  <div class="each-service-desc-desc">
-                    <h3>
-                      CAR RENTAL
-                    </h3>
+                  <div class="col-lg-12 col-md-12 col-sm-12 each-service-desc-desc text-center">
+                   
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, unde?
                     </p>
@@ -273,20 +336,20 @@
     
               
             </div>
-            <div class=each-service>
+            <div class="col-lg-12 col-md-12 col-sm-12  each-service">
         
-                <div class="flipcontainer" ontouchstart="this.classList.toggle('hover')">
+                <div class="col-lg-12 col-md-12 col-sm-12 flipcontainer" ontouchstart="this.classList.toggle('hover')">
                   <div class="flipper">
       
-                    <div class="each-service-logo">
-                      <div class=logo>
-                        <i class="far fa-9x fa-clipboard"></i>
+                    <div class="col-lg-12 col-md-12 col-sm-12 each-service-logo">
+                      <div class="col-lg-12 col-md-12 col-sm-12 logo text-center mx-auto">
+                        <i class="far fa-9x fa-clipboard"></i> <h3>
+                            CAR INSPECTION
+                          </h3>
                       </div>
                     </div>
-                    <div class="each-service-desc-desc">
-                      <h3>
-                        CAR INSPECTION
-                      </h3>
+                    <div class="col-lg-12 col-md-12 col-sm-12 each-service-desc-desc text-center">
+                     
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, unde?
                       </p>
@@ -304,84 +367,84 @@
     </div>
     
   </div>
-  <div class=section-spacing>
+  <!-- <div class=section-spacing>
 
-    </div>
+    </div> -->
 
    <div class=whybest>
-      <div class="crossfade1">
+      <div class="crossfade2">
 
-          <figure></figure>
+          <figure class="crossfade2-figure"></figure>
       
-          <figure></figure>
+          <figure class="crossfade2-figure"></figure>
       
-          <figure></figure>
+          <figure class="crossfade2-figure"></figure>
       
-          <figure></figure>
+          <figure class="crossfade2-figure"></figure>
       
-          <figure></figure>
+          <figure class="crossfade2-figure"></figure>
       
-        </div>
-  <div class="subtitles">
-    <h2>ONLY QUALITY FOR CLIENTS </h2>
-    <div class="undersubtitles">
+        </div> 
+  <div class="subtitles ">
+    <h2 class="text-light">ONLY QUALITY FOR CLIENTS </h2>
+    <div class="undersubtitles d-flex justify-content-center">
       <hr class=hrleft><i class="fa fa-2x  fa-star" aria-hidden="true"></i>
       <hr class=hrright>
     </div>
     </div>
-   
-      <div class="cardwrapper col-sm-8 col-md- 6 col-lg-3 ">
-        <div class= card>
-        <div class="card-title"> <i class="far fa-3x fa-id-badge"></i><h3>Professional Service</h3></div> 
+   <div class="row text-center d-flex justify-content-around">
+      <div class=" col-sm-8 col-md-5 col-lg-3 cardwrapper">
+        <div class="card bg-transparent">
+        <div class="card-title justify-content-center"> <i class="far fa-3x fa-id-badge"></i><h3>Professional Service</h3></div> 
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla esse, voluptatem vitae hic molestiae nisi doloremque velit. Debitis nihil accusantium dicta perferendis, blanditiis molestias, laudantium atque asperiores quis at ex!
 
           </p>
         </div>
 
-        <div class="card ">
-            <div class="card-title "><i class="fas fa-3x fa-wrench"></i><h3>Expert Mechanics</h3></div>
+        <div class="card bg-transparent">
+            <div class="card-title justify-content-center"><i class="fas fa-3x fa-wrench"></i><h3>Expert Mechanics</h3></div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eos incidunt praesentium officia, earum animi, quam soluta sapiente, eaque aperiam necessitatibus corporis sed magnam explicabo sunt doloremque quae. Blanditiis, hic!
 
           </p>
         </div>
       </div>
 
-      <div class="cardwrapper col-sm-8 col-md-6 col-lg-3 ">
-        <div class=card>
-            <div class="card-title"><i class="fas fa-3x fa-phone-volume"></i> <h3>Great Support</h3></div>
+      <div class=" col-sm-8 col-md-5 col-lg-3 cardwrapper ">
+        <div class="card bg-transparent">
+            <div class="card-title justify-content-center"><i class="fas fa-3x fa-phone-volume"></i> <h3>Great Support</h3></div>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, tempore illo, corporis quia maxime praesentium commodi magnam voluptate voluptas consectetur doloremque. Reprehenderit fugit atque sit nesciunt nihil, eligendi in dolorem.
 
           </p>
         </div>
-        <div class=card>
-            <div class="card-title"><i class="fas fa-3x fa-smile-beam"></i> <h3>Positive Reviews</h3></div>
+        <div class="card bg-transparent">
+            <div class="card-title justify-content-center"><i class="fas fa-3x fa-smile-beam"></i> <h3>Positive Reviews</h3></div>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nemo deserunt illum placeat possimus nobis quisquam esse, ut blanditiis exercitationem? Culpa dicta iure ducimus eligendi. Tempora, ipsam quasi! Modi, aliquid.</p>
         </div>
       </div>
 
-      <div class="cardwrapper col-sm-8 col-md- 6 col-lg-3 ">
-        <div class=card>
-            <div class="card-title"><i class="fas fa-3x fa-project-diagram"></i> <h3>
+      <div class=" col-sm-8 col-md-5 col-lg-3 cardwrapper ">
+        <div class="card bg-transparent">
+            <div class="card-title justify-content-center"><i class="fas fa-3x fa-project-diagram"></i> <h3>
             Largest Network</h3></div>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ipsa, aperiam provident sapiente dolore doloremque culpa, quae maxime sunt sint cum, voluptatem tempora veniam eius corrupti odio voluptates commodi! Adipisci!
 
           </p>
         </div>
 
-        <div class=card>
-            <div class="card-title"> <i class="fas fa-3x fa-car"></i>   <h3>Huge Fleet of Cars</h3></div>
+        <div class="card bg-transparent">
+            <div class="card-title justify-content-center"> <i class="fas fa-3x fa-car"></i>   <h3>Huge Car Fleet</h3></div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta odit deserunt, dolor veniam consequuntur vero unde mollitia tempora sapiente modi repellendus nostrum ut incidunt natus nulla, itaque labore tenetur.
 
           </p>
         </div>
       </div>
-    
+    </div>
     </div>
   
-    <div class=section-spacing>
-  </div> 
-  <div class="app-promo">
-    <div class="app-promo-info">
+    <!-- <div class=section-spacing>
+  </div>  -->
+  <div class=" row  app-promo d-flex justify-content-around">
+    <div class="app-promo-info text-center col-md-12 col-sm-12 col-lg-7">
       <h3>SAVE 30% <br/>WITH THE APP</h3>
       <p>Easy & Fast .. Book car in 60 seconds</p>
       <div class="app-promo-info-links">
@@ -389,28 +452,42 @@
         <div class="store"><a href=# class=app-link><i class="fab fa-2x fa-apple"></i><p> Apple Store</p> </a></div>
       </div>
     </div>
-    <img class=mobile-app src="img/mobile-app.png">
+    <img class="mobile-app col-sm-8 col-md-9 col-lg-3" src="img/mobile-app.png">
   </div>
+  <!-- <div class=section-spacing>
+    </div>  -->
 </body>
 <footer>
-  <div class=footer-top>
-<ul class=list1>
-  <h3>Quick Links</h3>
-  <li><a>Jobs</a></li>
-  <li><a>Brand Assets</a></li> 
-  <li><a>Investor Relations</a></li>
-  <li><a>Terms of Service</a></li>
+  <div class= "row footer-top justify-content-around">
+<ul class="col-sm-6 col-md-6 col-lg-4 list1 list-unstyled text-center">
+  <h3 class=text-center>Quick Links</h3>
+  <li><a href=#>Jobs</a></li>
+  <li><a href=#>Brand Assets</a></li> 
+  <li><a href=#>Investor Relations</a></li>
+  <li><a  href=#>Terms of Service</a></li>
 </ul>
-<ul class=list2>
+<ul class="col-sm-6 col-md-6 col-lg-4 list2 list-unstyled text-center mx-auto">
     <h3>GET IN TOUCH</h3>
-    <li><a><i class="fab fa-3x fa-facebook"></i></a></li>
-    <li><a> <i class="fab fa-3x fa-twitter"></i></a></li> 
-    <li><a><i class="fab fa-3x fa-instagram"></i></a></li>
-    <li><a><i class="fab fa-3x fa-google-plus-g"></i></a></li>
+    <li><a class="text-primary" href=#><i class="text-decoration-none fab fa-3x fa-facebook"></i></a></li>
+    <li><a class="text-primary"  href=#> <i class="fab fa-3x fa-twitter"></i></a></li> 
+    <li><a  href=#><i class="fab fa-3x fa-instagram"></i></a></li>
+    <li><a class="text-danger"  href=#><i class="fab fa-3x fa-google-plus-g"></i></a></li>
  </ul>
-    <div>
-   <h3>Newsletter</h3>
-   <form></form>
+    <div class="col-sm-6 col-md-6 col-lg-3   ">
+    <h3 class="text-center">Newsletter</h3>
+ 
+  
+      <form class action="/action_page2.php">
+    <div class="row  justify-content-around" >
+        <input type="email" class="form-control col-lg-9" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+  
+    <button type="submit" class="btn btn-transparent col-lg-3 bg-transparent text-danger"> <i class="far fa-2x fa-envelope-open"></i></button>
+  </div>
+</form>
+  
+
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
  </div>
 </div>
 <div class=footer-bottom>
@@ -419,9 +496,13 @@
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 <script src="js/pscript.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
 
 </html>
