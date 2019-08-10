@@ -31,7 +31,7 @@ body, html {
 }
 .hrleft{
     min-width:4vw;
-    margin-left:42vw;
+    margin-left:40vw;
       max-width:4vw;
       height:0.4vh;
        /* margin-left:45vw;  */
@@ -44,7 +44,7 @@ body, html {
 .hrright{
   min-width:4vw;
   max-width:4vw;
-margin-right:42vw;
+margin-right:40vw;
   height:0.4vh;
    /* margin-left:45vw;  */
 
@@ -146,12 +146,14 @@ background:linear-gradient(black,white)
 
 
 .default-white
-{      border-radius: 10%;
+{    border:2px solid yellow;
+    margin-top:5vh !important;
+    margin-bottom: 5vh !important;
       transition-duration: 0.8s;
 }
 .default-white:hover
 {
-background-color: yellow;
+
 transform:scale(1.2);
 }
 /* .testimonial-container{
@@ -260,3 +262,13 @@ footer{
   .list1 li, .list2  li{
   margin-top:3vh;
   }
+  @media only screen and (max-width: 768px) {
+      #about h2{
+          margin-top:5vh;
+      }
+  }
+  @media only screen and (max-width: 420px) {
+    #about h2{
+        margin-top:10vh;
+    }
+}
