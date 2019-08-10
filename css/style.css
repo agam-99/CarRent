@@ -145,10 +145,10 @@ background:linear-gradient(black,white)
 }
 
 
-.default-white
+.aboutuscard
 {    border:2px solid yellow;
     margin-top:5vh !important;
-    margin-bottom: 5vh !important;
+    margin-bottom: 20vh !important;
       transition-duration: 0.8s;
 }
 .default-white:hover
