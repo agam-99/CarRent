@@ -1,5 +1,8 @@
-.jumbotron{
-    background-color: white;
+body{
+    background: linear-gradient(white,rgb(162, 238, 248));
+}
+.alpha{
+    background: linear-gradient(white,rgb(162, 238, 248))
   }
   .media{
     margin-left: 10px;
