@@ -18,6 +18,7 @@ body{
       color: white;
     /* Center and scale the image nicely */
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover; 
   }
@@ -25,15 +26,20 @@ body{
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       padding-top: 15%;
   }
+  #about h2{
+    color:rgb(228, 215, 34);
+    font-size:11vh;
+    
+}
   .hrleft{
     min-width:4vw;
     margin-left:40vw;
       max-width:4vw;
-      height:0.4vh;
+      height:0.1vh;
        /* margin-left:45vw;  */
 
      
-      background-color: rgb(43, 170, 17);
+      background-color: rgb(0, 0, 0);
       border-radius: 3vw;
     
 }
@@ -41,11 +47,11 @@ body{
   min-width:4vw;
   max-width:4vw;
 margin-right:40vw;
-  height:0.4vh;
+  height:0.1vh;
    /* margin-left:45vw;  */
 
   
-  background-color: rgb(43, 170, 17);
+  background-color: rgb(0, 0, 0);
   border-radius: 3vw;
 }
 .title{
