@@ -124,15 +124,20 @@ border:2px solid rgb(187, 199, 26);
 }
 .team-member-pro-pic img{
     max-height:32vmax;
+    margin-top:1vmax;
+  
+    /* margin-bottom:1vmax; */
     background:linear-gradient(white,rgb(218, 217, 217));
 }
 .team-member-pro-pic{
-    justify-self: center;
+   
     height: 100%;
-    padding: 2vmax ;
-    margin-top:3vmax;
+    padding: 0vmax;
+    margin-top:7vh;
+    margin-bottom:2vh;
+   
     border:3px solid rgb(228, 215, 34);
-    margin-bottom:1vmax;
+  
 }
 
 footer{
