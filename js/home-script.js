@@ -122,3 +122,6 @@ window.addEventListener('scroll', function(event) {
 })
 });
 }
+$(function () {
+  $('#datetimepicker1').datetimepicker();
+});

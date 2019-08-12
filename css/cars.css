@@ -66,3 +66,13 @@
 .row{
     max-width: 100vw;
 }
+footer{
+    background:linear-gradient(rgb(255, 255, 255),rgb(65, 198, 207));
+  }
+.footer-top{
+    padding:0;
+    max-width: 100vw;
+  }
+  .list1 li, .list2  li{
+  margin-top:3vh;
+  }
