@@ -1,0 +1,104 @@
+
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/carPage.css">
+</head>
+<style>
+    *{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+        font-weight: 300;
+        }
+        h5 a{
+          text-decoration: none; 
+        }
+        .bookit a{
+        
+            border-radius: 15%;
+            padding: 0.2rem;
+        }
+        .rating{
+            text-align: center;
+        }
+        .car-card{
+  border:3px solid rgb(243, 188, 6);
+  border-radius:5%;
+}
+.card-image{
+  border-radius:5%;  
+}
+      
+        .bookit button{
+            text-align: center;
+            width: 30%;
+            padding:3%;
+            border-radius: 10%;
+            color: rgb(168, 168, 11);
+            border:2px solid rgb(168, 168, 11);
+            background-color:rgb(255, 255, 255);
+        }
+        .bookit button:hover{
+            background-color: rgb(168, 168, 11);
+            color: rgb(255, 255, 255);
+        }
+        .bookit{
+            text-align: center;
+        }
+        
+      
+        .rating i{
+            color: #ecec14;
+        }
+        </style>
+<body>
+    <div class="container">
+        <div class="row col-lg-12" >
+            <div class="col-lg-4 text-center mt-3 mb-3">
+                <div class="card car-card">
+                    <img src="http://4.bp.blogspot.com/-OpzJoEVINVk/Tm265viTyhI/AAAAAAAAcco/DTvok43b4Oc/s1600/cars+photos+1.jpg"
+                        alt="the image alt text here" height="250rem" class="card-image mt-3 ml-3 mr-3">
+                    <div class="row justify-content-between mt-4">
+                        <h5 class="col-lg-12"><a href="#" class="text-danger" >Aston Martin One-77</a></h5>
+                    <h8 class="col-lg-11 text-right text-primary font-italic mr-3"><u>39$ Rent /per a day</u></h8></div>
+                    <hr class=" mt-3 ml-4 mr-3 mb-3 align-center col-lg-9">
+                    <div class="row justify-content-center mt-4 ml-3 mr-3">
+                    <p class=" col-lg-12 ">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean inorci luctus et
+                        ultrices posuere
+                        cubilia.</p></div>
+                        <hr class=" mt-3 ml-4 mr-3 mb-3 align-center col-lg-9">
+                    <div class="row justify-content-around" >
+                        <h8 class="col-lg-12 text-center"> 0-60mph : {%time%} secs</h8>
+                        <h8 class="col-lg-12 text-center"> Top-Speed : {%topspeed%} Kmph</h8>
+                        <h8 class="col-lg-12 text-center">No. of Airbags : {%airbags%} </h8>
+                        </div>
+                    <p class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star unmark"></i>
+                    </p>
+                    <div class="btn bookit mb-5">
+                        <button>Book It</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
