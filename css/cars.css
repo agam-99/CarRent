@@ -77,8 +77,8 @@ h5 a{
 .rating{
     text-align: center;
 }
-.car-card{
-border:3px solid rgb(243, 188, 6);
+div.car-card {
+border:2px solid rgb(248, 192, 7);
 border-radius:5%;
 }
 .card-image{
