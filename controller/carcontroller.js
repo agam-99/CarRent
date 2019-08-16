@@ -5,12 +5,27 @@ const fs=require('fs');
 module.exports.gethome= (req,res)=>{
 let home=    fs.readFileSync("./static/index.html"); 
 let home1=home+" ";
-console.log(typeof(home1));
+
 res.end(home1);
 }
-module.exports.getteam=(req,res)=>{};
-module.exports.getaboutus=(req,res)=>{};
-module.exports.getcontact=(req,res)=>{};
+module.exports.getteam=(req,res)=>{
+    let team=    fs.readFileSync("./static/team.html"); 
+let team1=team+" ";
+
+res.end(team1);
+};
+module.exports.getaboutus=(req,res)=>{
+    let aboutus=    fs.readFileSync("./static/aboutus.html"); 
+let aboutus1=aboutus+" ";
+
+res.end(aboutus1);
+};
+module.exports.getcontact=(req,res)=>{
+    let contactus=    fs.readFileSync("./static/contactus.html"); 
+let contactus1=contactus+" ";
+
+res.end(contactus1);
+};
 
 module.exports.getallcars= async (req,res)=>{
     var allcarpage2=fs.readFileSync('./templates/cars.html');
@@ -25,7 +40,7 @@ module.exports.getallcars= async (req,res)=>{
       { console.log(result[i]);
          let carcard1=carcard.replace(/{%name%}/g,result[i]["Name"]);
         carcard1=carcard1.replace(/{%price%}/g,result[i]["Rent"]);
-     
+        carcard1=carcard1.replace(/{%img1%}/g,result[i]["img1"]);
         carcard1=carcard1.replace(/{%time%}/g,result[i]["Mph060"]);
         
         carcard1=carcard1.replace(/{%topspeed%}/g,result[i]["TopSpeed"]);
@@ -86,6 +101,9 @@ a = a+carcard1;
             carinfo=carinfo.replace(/{%displacement%}/g,result["Displacement"]);
             carinfo=carinfo.replace(/{%description%}/g,result["Description"]);
             carinfo=carinfo.replace(/{%airbags%}/g,result["Airbags"]);
+            carinfo=carinfo.replace(/{%img2%}/g,result[i]["img2"]);
+            carinfo=carinfo.replace(/{%img3%}/g,result[i]["img3"]);
+            carinfo=carinfo.replace(/{%img4%}/g,result[i]["img4"]);
             if(result["Rating"]<5&&result["Rating"]>=4)
             {
             carinfo=carinfo.replace(/{%rating%}/g,'<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>');

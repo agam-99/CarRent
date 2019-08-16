@@ -18,9 +18,18 @@
     scroll-behavior: smooth;
   }
   body, html {
-    height: 100%;
+
       font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+  nav{
+  background: linear-gradient(to right, rgb(129, 229, 247),rgb(216, 255, 252),rgb(129, 229, 247))
+}
+.navbar-brand{
+  font-size:5vh;
+}
+.nav li a {
+  font-size:3vh;
+}
   /* .nav1{
       justify-content: flex-end !important;
   } */
@@ -127,6 +136,9 @@ footer{
     padding:0;
     max-width: 100vw;
   }
+  .footer-bottom h2{
+    margin:0;
+  }
   .list1 li, .list2  li{
   margin-top:3vh;
   }</style>
@@ -139,11 +151,11 @@ footer{
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                   <ul class="nav navbar-nav ml-auto">
-                   <li><a class="nav-item nav-link active text-light" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li>  <a class="nav-item nav-link text-light" href="team.html">Team</a></li>
-                      <li>  <a class="nav-item nav-link text-light" href="aboutus.html">About Us</a></li>
-                        <li> <a class="nav-item nav-link text-light" href="contactus.html">Contact</a></li>
-                          <li><a class="nav-item nav-link text-light" href="car-catalogue">Cars</a> </li>
+                   <li><a class="nav-item nav-link  text-light" href="./home">Home <span class="sr-only">(current)</span></a></li>
+                    <li>  <a class="nav-item nav-link text-light" href="./home">Team</a></li>
+                      <li>  <a class="nav-item nav-link text-light" href="./about-us">About Us</a></li>
+                        <li> <a class="nav-item nav-link text-light" href="./contact-us">Contact</a></li>
+                          <li><a class="nav-item nav-link  active text-light" href="./car-catalogue">Cars</a> </li>
                    </ul> 
                  
                 </div>
@@ -167,7 +179,7 @@ footer{
                 </div>
 </body>
 <footer>
-        <div class= "row footer-top justify-content-around">
+        <div class= "row footer-top justify-content-around " style="max-width: 99%">
       <ul class="col-sm-6 col-md-6 col-lg-4 list1 list-unstyled text-center">
         <h3 class=text-center>Quick Links</h3>
         <li><a href=#>Jobs</a></li>
@@ -188,10 +200,10 @@ footer{
         
             <form class action="/action_page2.php">
           <div class="row  justify-content-around" >
-              <input type="email" class="form-control col-lg-9" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <input type="email" class="form-control col-lg-8" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
       
         
-          <button type="submit" class="btn btn-transparent col-lg-3 bg-transparent text-danger"> <i class="far fa-2x fa-envelope-open"></i></button>
+          <button type="submit" class="btn btn-transparent col-lg-2 bg-transparent text-danger"> <i class="far fa-2x fa-envelope-open"></i></button>
         </div>
       </form>
         

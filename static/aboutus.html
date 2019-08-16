@@ -5,13 +5,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AboutUs</title>
+    <title>About-Us</title>
     <link rel="stylesheet" href="./css/about-us.css" rel="stylesheet/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body, html {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* .nav1{
+    justify-content: flex-end !important;
+} */
+nav{
+  background: linear-gradient(to right, rgb(129, 229, 247),rgb(216, 255, 252),rgb(129, 229, 247))
+}
+.navbar-brand{
+  font-size:5vh;
+}
+.nav li a {
+  font-size:3vh;
+}
+
+.bg { 
+  /* The image used */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+ 
+    color: white;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+#about{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 15%;
+    padding-bottom:10%;
+}
+#about h2{
+    color:rgb(228, 215, 34);
+    font-size:12vh;
+    
+}
+#about2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 5%;
+}
+.hrleft{
+    min-width:4vw;
+     margin-left:40vw;
+      max-width:4vw;
+      height:0.1vh;
+       /* margin-left:45vw;  */
+
+     
+      background-color: rgb(255, 255, 255);
+      border-radius: 3vw;
+    
+}
+.hrright{
+  min-width:4vw;
+  max-width:4vw;
+  margin-right:40vw;
+  height:0.1vh;
+   /* margin-left:45vw;  */
+
+  
+  background-color: rgb(255, 255, 255);
+  border-radius: 3vw;
+}
+
+.subtitles{
+    background:linear-gradient(white, rgb(232, 243, 172));
+    padding-top:2vmax;
+    
+    background-attachment: fixed;
+    padding-bottom:2vmax;
+}
+.subtitles h2{
+    color:rgb(228, 215, 34);
+    font-size:10vh;
+}
+.undersubtitles{
+  
+    margin-top:1vmax;
+     color:rgb(228, 215, 34);
+    padding-top:1vmax;
+    padding-bottom:1vmax;
+}
+.about-feature-area .row{
+    text-align: center;
+}
+.fa-car{
+    color: yellow;
+}
+.default-yellow{
+  border-radius: 10%;
+    background: yellow;
+}
+.features{
+    text-align: center;
+    padding-bottom:5vh;
+}
+.single-our-facility ul{
+    padding-top: 3rem;
+}
+.single-our-facility ul li{
+    padding-bottom: 1rem;
+    text-align: left;
+}
+.features{
+  /* background-attachment: fixed; */
+  /* height: 100vh; */
+  width: 100%;
+  color: wheat;
+  background-size: cover;
+  background-position: center;
+    padding-top: 5rem;
+       background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),
+url("https://www.setaswall.com/wp-content/uploads/2017/12/Cool-Car-Wallpaper-30-1920x1200.jpg");
+    
+}
+
+.counterMain {
+    padding-top:3vmax;
+    padding-bottom:3vmax;
+background:rgb(233, 163, 13);
+}
+.counter {
+    background:transparent;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.count-title {
+    font-size: 8vh;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color:rgb(12, 12, 8);
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    color:rgb(252, 252, 252);
+    text-decoration: underline;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.counter .fa-2x {
+ 
+    color: #ffffff;
+}
+
+
+.aboutuscard
+{    border:2px solid yellow;
+    margin-top:5vh !important;
+    margin-bottom: 20vh !important;
+      transition-duration: 0.8s;
+}
+.default-white:hover
+{
+
+transform:scale(1.2);
+}
+/* .testimonial-container{
+    background: linear-gradient(white,rgb(65, 198, 207));
+} */
+/* carousel */
+.testimonial-title {
+    font-size:8.5vh;
+    font-weight: bolder;
+    color:rgb(230, 216, 34);
+}
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 20%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.each-mem-container{
+    padding-top:1vmax;
+padding-bottom:1vmax; 
+}
+.team-min{
+min-width:30vmax; 
+padding-top:3vmax;
+padding-bottom:3vmax;   
+}
+.team-min h5{
+    margin-left:2vmax;
+    margin-top:3vmax;
+}
+.team-mem-icon img{
+    max-height:5vmax;
+    max-width:5vmax;
+    border-radius:50%;
+    border:3px solid rgb(228, 215, 34);
+
+
+}
+.team-member-pro-pic img{
+    max-height:32vmax;
+}
+footer{
+    background:linear-gradient(rgb(255, 255, 255),rgb(65, 198, 207));
+  }
+.footer-top{
+    padding:0;
+    max-width: 99vw;
+  }
+  .footer-bottom h2{
+    margin:0;
+  }
+  .list1 li, .list2  li{
+  margin-top:3vh;
+  }
+  @media only screen and (max-width: 768px) {
+      #about h2{
+          margin-top:5vh;
+      }
+  }
+  @media only screen and (max-width: 420px) {
+    #about h2{
+        margin-top:10vh;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -22,11 +324,11 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                   <ul class="nav nav1 navbar-nav ml-auto">
-                   <li><a class="nav-item nav-link active text-light" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li>  <a class="nav-item nav-link text-light" href="team.html">Team</a></li>
-                      <li>  <a class="nav-item nav-link text-light" href="aboutus.html">About Us</a></li>
-                        <li> <a class="nav-item nav-link text-light" href="contactus.html">Contact</a></li>
-                          <li><a class="nav-item nav-link text-light" href="cars">Cars</a> </li>
+                   <li><a class="nav-item nav-link  text-light" href="./home">Home <span class="sr-only">(current)</span></a></li>
+                    <li>  <a class="nav-item nav-link text-light" href="./team">Team</a></li>
+                      <li>  <a class="nav-item nav-link active text-light" href="./about-us">About Us</a></li>
+                        <li> <a class="nav-item nav-link text-light" href="./contact-us">Contact</a></li>
+                          <li><a class="nav-item nav-link text-light" href="./car-catalogue">Cars</a> </li>
                    </ul> 
                  
                 </div>
@@ -37,8 +339,8 @@
                 <div id="about" class="text-center">
                     <h2>ABOUT US</h2>
                     <div class="undersubtitles d-flex justify-content-around">
-                            <hr class=hrleft><i class="fa fa-2x fa-car" aria-hidden="true"></i>
-                            <hr class=hrright>
+                            <hr class="hrleft" ><i class="fa fa-2x fa-car text-warning" ></i>
+                            <hr class="hrright">
                           </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
@@ -46,22 +348,10 @@
         </div>
     </div>
   
-    <div class="container pb-5">
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="about2" class="section-title text-center">
-                 
-                    
-                    <div class="pt-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <hr id="hrBlack">
-                </div>
-            </div>
-        </div>
-        <div class="row pt-5">
-            <div class="col-lg-6 col-md-12 text-center pt-5">
-                <p>Lorem simply dummy is a texted of the printing costed and
+ 
+        <div class="row py-5 px-5" style="max-width:99.8vw;">
+            <div class="col-lg-6 col-md-12 text-center pt-5 px-5">
+                <p class="px-5 py-5">Lorem simply dummy is a texted of the printing costed and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown printer
                     took a galley of type.
@@ -70,7 +360,7 @@
                     esse odit incidunt amet natus cupiditate
                     velit nihil, repellendus dolorum ab minima omnis aliquid, earum necessitatibus.</p>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 px-5">
                 <img src="./img/about-us/home-2-about.png" width="100%" height="100%" alt="A car was here">
             </div>
         </div>
@@ -186,8 +476,8 @@
         </div>
     </section>
 
-    <div class="container-fluid counterMain py-8">
-        <div class="row text-center">
+    <div class=" counterMain py-8">
+        <div class="row text-center" style="max-width:99vw">
             <div class="col">
                 <div class="counter">
                     <i class="fa fa-user fa-2x"></i>
@@ -285,7 +575,7 @@
     <script src="./js/aboutus-script.js"></script>
 </body>
 <footer>
-        <div class= "row footer-top justify-content-around"  max-width="100vw" padding="0">
+        <div class= "row footer-top justify-content-around"  max-width="99vw !important" padding="0">
       <ul class="col-sm-6 col-md-6 col-lg-4 list1 list-unstyled text-center">
         <h3 class=text-center>Quick Links</h3>
         <li><a href=#>Jobs</a></li>
@@ -300,16 +590,16 @@
           <li><a  href=#><i class="fab fa-3x fa-instagram"></i></a></li>
           <li><a class="text-danger"  href=#><i class="fab fa-3x fa-google-plus-g"></i></a></li>
        </ul>
-          <div class="col-sm-6 col-md-6 col-lg-3   ">
+          <div class="col-sm-6 col-md-6 col-lg-3   " style="padding:0!important;">
           <h3 class="text-center">Newsletter</h3>
        
         
             <form class action="/action_page2.php">
-          <div class="row  justify-content-around" >
-              <input type="email" class="form-control col-lg-9" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <div class="d-flex  " >
+              <input type="email" class="form-control col-lg-8" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
       
         
-          <button type="submit" class="btn btn-transparent col-lg-3 bg-transparent text-danger"> <i class="far fa-2x fa-envelope-open"></i></button>
+          <button type="submit" class="btn btn-transparent col-lg-2 bg-transparent text-danger"> <i class="far fa-2x fa-envelope-open"></i></button>
         </div>
       </form>
         
@@ -323,7 +613,106 @@
       </footer>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/aboutus-script.js"></script>
+  <script>
+  (function ($) {
+    $.fn.countTo = function (options) {
+        options = options || {};
+
+        return $(this).each(function () {
+            // set options for current element
+            var settings = $.extend({}, $.fn.countTo.defaults, {
+                from: $(this).data('from'),
+                to: $(this).data('to'),
+                speed: $(this).data('speed'),
+                refreshInterval: $(this).data('refresh-interval'),
+                decimals: $(this).data('decimals')
+            }, options);
+
+            // how many times to update the value, and how much to increment the value on each update
+            var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                increment = (settings.to - settings.from) / loops;
+
+            // references & variables that will change with each update
+            var self = this,
+                $self = $(this),
+                loopCount = 0,
+                value = settings.from,
+                data = $self.data('countTo') || {};
+
+            $self.data('countTo', data);
+
+            // if an existing interval can be found, clear it first
+            if (data.interval) {
+                clearInterval(data.interval);
+            }
+            data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+            // initialize the element with the starting value
+            render(value);
+
+            function updateTimer() {
+                value += increment;
+                loopCount++;
+
+                render(value);
+
+                if (typeof (settings.onUpdate) == 'function') {
+                    settings.onUpdate.call(self, value);
+                }
+
+                if (loopCount >= loops) {
+                    // remove the interval
+                    $self.removeData('countTo');
+                    clearInterval(data.interval);
+                    value = settings.to;
+
+                    if (typeof (settings.onComplete) == 'function') {
+                        settings.onComplete.call(self, value);
+                    }
+                }
+            }
+
+            function render(value) {
+                var formattedValue = settings.formatter.call(self, value, settings);
+                $self.html(formattedValue);
+            }
+        });
+    };
+
+    $.fn.countTo.defaults = {
+        from: 0,               // the number the element should start at
+        to: 0,                 // the number the element should end at
+        speed: 1000,           // how long it should take to count between the target numbers
+        refreshInterval: 100,  // how often the element should be updated
+        decimals: 0,           // the number of decimal places to show
+        formatter: formatter,  // handler for formatting the value before rendering
+        onUpdate: null,        // callback method for every time the element is updated
+        onComplete: null       // callback method for when the element finishes updating
+    };
+
+    function formatter(value, settings) {
+        return value.toFixed(settings.decimals);
+    }
+}(jQuery));
+
+jQuery(function ($) {
+    // custom formatting example
+    $('.count-number').data('countToOptions', {
+        formatter: function (value, options) {
+            return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+    });
+
+    // start all the timers
+    $('.timer').each(count);
+
+    function count(options) {
+        var $this = $(this);
+        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+        $this.countTo(options);
+    }
+});
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>

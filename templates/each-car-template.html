@@ -14,6 +14,16 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
+  
+nav{
+  background: linear-gradient(to right, rgb(129, 229, 247),rgb(216, 255, 252),rgb(129, 229, 247))
+}
+.navbar-brand{
+  font-size:5vh;
+}
+.nav li a {
+  font-size:3vh;
+}
   body {
     margin: 0;
     padding: 0;
@@ -147,18 +157,18 @@
   font-size: Larger;
   margin-bottom:1vh;
 }
-  .footer-top {
-    padding: 3vw;
+.footer-top{
+padding:3vw;
 
-  }
-
-  .list1 li,
-  .list2 li {
-    margin-top: 2vh;
-  }
-
-  footer {
-    background: linear-gradient(rgb(129, 229, 247), white);
+}
+.list1 li, .list2  li{
+margin-top:2vh;
+}
+footer{
+background:linear-gradient( rgb(129, 229, 247),white) ;
+}
+.footer-bottom h2{
+    margin:0;
   }
 
   pre {
@@ -168,7 +178,7 @@
 </style>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary " style="max-width: 100vw">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light  " style="max-width: 100vw">
     <a class="navbar-brand text-light" href="index.html">Car-Eve</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -176,12 +186,12 @@
     </button>
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
       <ul class="nav navbar-nav ml-auto">
-        <li><a class="nav-item nav-link active text-light" href="index.html">Home <span
+        <li><a class="nav-item nav-link active text-light" href="./home">Home <span
               class="sr-only">(current)</span></a></li>
-        <li> <a class="nav-item nav-link text-light" href="team.html">Team</a></li>
-        <li> <a class="nav-item nav-link text-light" href="aboutus.html">About Us</a></li>
-        <li> <a class="nav-item nav-link text-light" href="contactus.html">Contact</a></li>
-        <li><a class="nav-item nav-link text-light" href="/templates/cars.html">Cars</a> </li>
+        <li> <a class="nav-item nav-link text-light" href="./team">Team</a></li>
+        <li> <a class="nav-item nav-link text-light" href="./about-us">About Us</a></li>
+        <li> <a class="nav-item nav-link text-light" href="./contact-us">Contact</a></li>
+        <li><a class="nav-item nav-link text-light" href="./car-catalogue">Cars</a> </li>
       </ul>
 
     </div>
@@ -201,13 +211,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100  " src="#" alt="First slide">
+              <img class="d-block w-100  " src="{%img2%}" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 " src="#" alt="Second slide">
+              <img class="d-block w-100 " src="{%img3%}" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block  w-100" src="#" alt="Third slide">
+              <img class="d-block  w-100" src="{%img4%}" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -220,8 +230,8 @@
           </a>
         </div>
         <div class="car-details-info">
-          <h4>Additional Info</h4>
-          <p>
+          <h4 class="ml-5 mt-3">Additional Info</h4>
+          <p class="px-5 pt-3">
             {%description%}
           </p>
           <div class="technical-info">
@@ -338,43 +348,41 @@
   </div>
 </body>
 <footer>
-  <div class="row footer-top justify-content-around">
-    <ul class="col-sm-6 col-md-6 col-lg-4 list1 list-unstyled text-center">
-      <h3 class=text-center>Quick Links</h3>
-      <li><a href=#>Jobs</a></li>
-      <li><a href=#>Brand Assets</a></li>
-      <li><a href=#>Investor Relations</a></li>
-      <li><a href=#>Terms of Service</a></li>
-    </ul>
-    <ul class="col-sm-6 col-md-6 col-lg-4 list2 list-unstyled text-center mx-auto">
-      <h3>GET IN TOUCH</h3>
-      <li><a class="text-primary" href=#><i class="text-decoration-none fab fa-3x fa-facebook"></i></a></li>
-      <li><a class="text-primary" href=#> <i class="fab fa-3x fa-twitter"></i></a></li>
-      <li><a href=#><i class="fab fa-3x fa-instagram"></i></a></li>
-      <li><a class="text-danger" href=#><i class="fab fa-3x fa-google-plus-g"></i></a></li>
-    </ul>
+  <div class= "row footer-top justify-content-around "style="max-width:99vw;">
+<ul class="col-sm-6 col-md-6 col-lg-4 list1 list-unstyled text-center">
+  <h3 class=text-center>Quick Links</h3>
+  <li><a href=#>Jobs</a></li>
+  <li><a href=#>Brand Assets</a></li> 
+  <li><a href=#>Investor Relations</a></li>
+  <li><a  href=#>Terms of Service</a></li>
+</ul>
+<ul class="col-sm-6 col-md-6 col-lg-4 list2 list-unstyled text-center mx-auto">
+    <h3>GET IN TOUCH</h3>
+    <li><a class="text-primary" href=#><i class="text-decoration-none fab fa-3x fa-facebook"></i></a></li>
+    <li><a class="text-primary"  href=#> <i class="fab fa-3x fa-twitter"></i></a></li> 
+    <li><a  href=#><i class="fab fa-3x fa-instagram"></i></a></li>
+    <li><a class="text-danger"  href=#><i class="fab fa-3x fa-google-plus-g"></i></a></li>
+ </ul>
     <div class="col-sm-6 col-md-6 col-lg-3   ">
-      <h3 class="text-center">Newsletter</h3>
+    <h3 class="text-center">Newsletter</h3>
+ 
+  
+      <form class action="/action_page2.php" style="margin-top:-40% !important; padding:0;">
+    <div class="row  justify-content-center" >
+        <input type="email" class="form-control col-lg-9" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 
-
-      <form class action="/action_page2.php">
-        <div class="row  justify-content-around">
-          <input type="email" class="form-control col-lg-9" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Enter email">
-
-
-          <button type="submit" class="btn btn-transparent col-lg-3 bg-transparent text-danger"> <i
-              class="far fa-2x fa-envelope-open"></i></button>
-        </div>
-      </form>
-
-
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
+  
+    <button type="submit" class="btn btn-transparent col-lg-3 bg-transparent text-danger"> <i class="far fa-2x fa-envelope-open"></i></button>
   </div>
-  <div class=footer-bottom>
-    <h2 col-lg-12 style="text-align: center">Copyright &copy 2019 CAR-EVERYTHING</h2>
-  </div>
+</form>
+  
+
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+ </div>
+</div>
+<div class=footer-bottom>
+<h2 col-lg-12 style="text-align: center">Copyright &copy 2019 CAR-EVERYTHING</h2>
+</div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
