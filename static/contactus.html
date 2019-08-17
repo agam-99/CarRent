@@ -11,8 +11,9 @@
   <link href="css/contact.css" rel="stylesheet" type=text/css>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
-  nav{
-  background: linear-gradient(to right, rgb(129, 229, 247),rgb(216, 255, 252),rgb(129, 229, 247))
+nav{
+  background-color:  rgb(0, 17, 53);
+
 }
 .navbar-brand{
   font-size:5vh;
@@ -86,12 +87,15 @@ margin-right:40vw;
 .footer-bottom h2{
     margin:0;
   }
+  footer{
+background:linear-gradient(to top, rgb(180, 180, 180),white) ;
+}
 </style>
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary "style="max-width: 100vw">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light  "style="max-width: 100vw">
     <a class="navbar-brand text-light" href="index.html">Car-Eve</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
@@ -186,28 +190,27 @@ margin-right:40vw;
     
     <div class="col-lg-4">
        <form action="/action_page.php">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" class="form-control" id="name">
+          </div>
          <div class="form-group">
            <label for="email">Email address:</label>
            <input type="email" class="form-control" id="email">
          </div>
-         <div class="form-group">
-           <label for="pwd">Password:</label>
-           <input type="password" class="form-control" id="pwd">
-         </div>
+       
          
     </div>
     <div class="col-lg-4">
        <form action="/action_page.php">
          <div class="form-group">
-           
-           <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+            <label class="col-lg-12 pl-0" for="message"> Message:</label>
+           <textarea name="" id="" cols="30" rows="5" placeholder="  Type Your Message Here"></textarea>
          </div>
-         <div class="d-flex">
-       <div class="checkbox mr-5">
-           <label><input type="checkbox"> Remember me</label>
-         </div>
+    
+ 
          <button type="submit" class="btn btn-default text-danger bg-light">Submit</button>
-        </div>
+     
        </form>
     </div>
 

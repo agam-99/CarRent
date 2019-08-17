@@ -22,7 +22,7 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   nav{
-  background: linear-gradient(to right, rgb(129, 229, 247),rgb(216, 255, 252),rgb(129, 229, 247))
+  background-color:  rgb(0, 17, 53);
 }
 .navbar-brand{
   font-size:5vh;
@@ -101,10 +101,11 @@ h5 a{
 }
 div.car-card {
 border:2px solid rgb(248, 192, 7);
-border-radius:5%;
+border-radius:12px;
 }
 .card-image{
 border-radius:5%;  
+size:150%;
 }
 
 .bookit button{
@@ -112,12 +113,12 @@ border-radius:5%;
     width: 30%;
     padding:3%;
     border-radius: 10%;
-    color: rgb(168, 168, 11);
-    border:2px solid rgb(168, 168, 11);
+    color: rgb(248, 192, 7);
+    border:2px solid rgb(248, 192, 7);
     background-color:rgb(255, 255, 255);
 }
 .bookit button:hover{
-    background-color: rgb(168, 168, 11);
+    background-color: rgb(248, 192, 7);
     color: rgb(255, 255, 255);
 }
 .bookit{
@@ -130,8 +131,8 @@ border-radius:5%;
 }
 footer{
   margin-top:5%;
-    background:linear-gradient(rgb(255, 255, 255),rgb(65, 198, 207));
-  }
+background:linear-gradient(to top, rgb(180, 180, 180),white) ;
+}
 .footer-top{
     padding:0;
     max-width: 100vw;
@@ -144,7 +145,7 @@ footer{
   }</style>
 </head>
 <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary "style="max-width: 100vw">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light "style="max-width: 100vw">
                 <a class="navbar-brand text-light" href="index.html">Car-Eve</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -179,42 +180,42 @@ footer{
                 </div>
 </body>
 <footer>
-        <div class= "row footer-top justify-content-around " style="max-width: 99%">
-      <ul class="col-sm-6 col-md-6 col-lg-4 list1 list-unstyled text-center">
-        <h3 class=text-center>Quick Links</h3>
-        <li><a href=#>Jobs</a></li>
-        <li><a href=#>Brand Assets</a></li> 
-        <li><a href=#>Investor Relations</a></li>
-        <li><a  href=#>Terms of Service</a></li>
-      </ul>
-      <ul class="col-sm-6 col-md-6 col-lg-4 list2 list-unstyled text-center mx-auto">
-          <h3>GET IN TOUCH</h3>
-          <li><a class="text-primary" href=#><i class="text-decoration-none fab fa-3x fa-facebook"></i></a></li>
-          <li><a class="text-primary"  href=#> <i class="fab fa-3x fa-twitter"></i></a></li> 
-          <li><a  href=#><i class="fab fa-3x fa-instagram"></i></a></li>
-          <li><a class="text-danger"  href=#><i class="fab fa-3x fa-google-plus-g"></i></a></li>
-       </ul>
-          <div class="col-sm-6 col-md-6 col-lg-3   ">
-          <h3 class="text-center">Newsletter</h3>
-       
-        
-            <form class action="/action_page2.php">
-          <div class="row  justify-content-around" >
-              <input type="email" class="form-control col-lg-8" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      
-        
-          <button type="submit" class="btn btn-transparent col-lg-2 bg-transparent text-danger"> <i class="far fa-2x fa-envelope-open"></i></button>
-        </div>
-      </form>
-        
-      
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-       </div>
-      </div>
-      <div class=footer-bottom>
-      <h2 col-lg-12 style="text-align: center">Copyright &copy 2019 CAR-EVERYTHING</h2>
-      </div>
-      </footer>
+    <div class= "row footer-top justify-content-around "style="max-width:99vw;">
+  <ul class="col-sm-6 col-md-6 col-lg-4 list1 list-unstyled text-center">
+    <h3 class=text-center>Quick Links</h3>
+    <li><a href=#>Jobs</a></li>
+    <li><a href=#>Brand Assets</a></li> 
+    <li><a href=#>Investor Relations</a></li>
+    <li><a  href=#>Terms of Service</a></li>
+  </ul>
+  <ul class="col-sm-6 col-md-6 col-lg-4 list2 list-unstyled text-center ">
+      <h3>Get in Touch</h3>
+      <li><a class="text-primary" href=#><i class="text-decoration-none fab fa-2x fa-facebook"></i></a></li>
+      <li><a class="text-primary"  href=#> <i class="fab fa-2x fa-twitter"></i></a></li> 
+      <li><a  href=#><i class="fab fa-2x fa-instagram"></i></a></li>
+      <li><a class="text-danger"  href=#><i class="fab fa-2x fa-google-plus-g"></i></a></li>
+   </ul>
+      <div class="col-sm-6 col-md-6 col-lg-4 ">
+      <h3 class="text-center mb-3">Newsletter</h3>
+   
+    
+        <form class action="/action_page2.php" style="">
+      <div class="row  justify-content-center" >
+          <input type="email" class="form-control col-lg-7 ml-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  
+    
+      <button type="submit" class="btn btn-transparent col-lg-3 bg-transparent text-danger"> <i class="far fa-2x fa-envelope-open"></i></button>
+    </div>
+  </form>
+    
+  
+      <small id="emailHelp" class="form-text text-center">We'll never share your email with anyone else.</small>
+   </div>
+  </div>
+  <div class=footer-bottom>
+  <h4 col-lg-12 style="text-align: center;margin-bottom:0;">Copyright &copy 2019 CAR-EVERYTHING</h4>
+  </div>
+  </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->

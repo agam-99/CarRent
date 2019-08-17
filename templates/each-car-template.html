@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -16,7 +19,7 @@
 <style>
   
 nav{
-  background: linear-gradient(to right, rgb(129, 229, 247),rgb(216, 255, 252),rgb(129, 229, 247));
+  background-color:  rgb(0, 17, 53);
 }
 .navbar-brand{
   font-size:5vh;
@@ -274,7 +277,7 @@ padding:3vw;
 margin-top:2vh;
 }
 footer{
-background:linear-gradient(to top, rgb(129, 229, 247),white) ;
+background:linear-gradient(to top, rgb(180, 180, 180),white) ;
 }
 .footer-bottom h2{
     margin:0;
@@ -306,7 +309,7 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
     </div>
   </nav>
 
-  <div class="row main justify-content-center "style="max-width:99.9vw">
+  <div class="row main justify-content-center mb-5 "style="max-width:99.9vw">
       <div class="crossfade2">
 
           <figure ></figure>
@@ -321,9 +324,9 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
       
         </div>        
     <div class="col-lg-8">
-      <div class="car-details-content pl-5">
-        <h2  > {%name%} <span class="price">Rent: <b>{%price%}$/day</b></span></h2>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade col-lg-12" data-ride="carousel"
+      <div class="car-details-content ml-5">
+        <h2 class= "pl-3 ml-1"> {%name%} <span class="price mt-3 mr-3">Rent: <b>{%price%}$/day</b></span></h2>
+        <div id="carouselExampleFade" class="carousel slide  col-lg-12" data-ride="carousel"
           data-interval="1000">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
@@ -447,7 +450,7 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
           <h3>For More Informations</h3>
           <div class="sidebar-body text-center">
             <p><i class="fa fa-2x fa-mobile mr-2"></i> +8801816 277 243</p>
-            <p><i class="far fa-2x fa-clock mr-3"></i> Mon - Sat 8.00 - 18.00</p>
+            <p class=pl-4><i class="far fa-2x fa-clock mr-2"></i> Mon - Sat 8.00 - 18.00</p>
           </div>
         </div>
 
@@ -458,12 +461,12 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
         <div class="single-sidebar">
           <h3>Connect with Us</h3>
           <div class="sidebar-body">
-            <div class="social-icons text-center">
-              <a href="#"><i class="fab fa-2x fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-2x fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-2x fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-2x fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-2x  fa-dribbble"></i></a>
+            <div class="social-icons text-center ">
+              <a href="#"><i class="fab ml-2 mr-2 fa-2x fa-facebook"></i></a>
+              <a href="#"><i class="fab ml-2 mr-2 fa-2x fa-twitter"></i></a>
+              <a href="#"><i class="fab ml-2 mr-2 fa-2x fa-instagram"></i></a>
+              <a href="#"><i class="fab ml-2 mr-2 fa-2x fa-linkedin"></i></a>
+              <a href="#"><i class="fab ml-2 mr-2 fa-2x  fa-dribbble"></i></a>
             </div>
           </div>
         </div>
@@ -471,6 +474,7 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
       </div>
     </div>
   </div>
+  <hr>
 </body>
 <footer>
   <div class= "row footer-top justify-content-around "style="max-width:99vw;">
@@ -481,20 +485,20 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
   <li><a href=#>Investor Relations</a></li>
   <li><a  href=#>Terms of Service</a></li>
 </ul>
-<ul class="col-sm-6 col-md-6 col-lg-4 list2 list-unstyled text-center mx-auto">
-    <h3>GET IN TOUCH</h3>
-    <li><a class="text-primary" href=#><i class="text-decoration-none fab fa-3x fa-facebook"></i></a></li>
-    <li><a class="text-primary"  href=#> <i class="fab fa-3x fa-twitter"></i></a></li> 
-    <li><a  href=#><i class="fab fa-3x fa-instagram"></i></a></li>
-    <li><a class="text-danger"  href=#><i class="fab fa-3x fa-google-plus-g"></i></a></li>
+<ul class="col-sm-6 col-md-6 col-lg-4 list2 list-unstyled text-center ">
+    <h3>Get in Touch</h3>
+    <li><a class="text-primary" href=#><i class="text-decoration-none fab fa-2x fa-facebook"></i></a></li>
+    <li><a class="text-primary"  href=#> <i class="fab fa-2x fa-twitter"></i></a></li> 
+    <li><a  href=#><i class="fab fa-2x fa-instagram"></i></a></li>
+    <li><a class="text-danger"  href=#><i class="fab fa-2x fa-google-plus-g"></i></a></li>
  </ul>
-    <div class="col-sm-6 col-md-6 col-lg-3   ">
-    <h3 class="text-center">Newsletter</h3>
+    <div class="col-sm-6 col-md-6 col-lg-4 ">
+    <h3 class="text-center mb-3">Newsletter</h3>
  
   
-      <form class action="/action_page2.php" style="margin-top:-40% !important; padding:0;">
+      <form class action="/action_page2.php" style="">
     <div class="row  justify-content-center" >
-        <input type="email" class="form-control col-lg-9" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="email" class="form-control col-lg-7 ml-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 
   
     <button type="submit" class="btn btn-transparent col-lg-3 bg-transparent text-danger"> <i class="far fa-2x fa-envelope-open"></i></button>
@@ -502,11 +506,11 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
 </form>
   
 
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <small id="emailHelp" class="form-text text-center">We'll never share your email with anyone else.</small>
  </div>
 </div>
 <div class=footer-bottom>
-<h2 col-lg-12 style="text-align: center">Copyright &copy 2019 CAR-EVERYTHING</h2>
+<h4 col-lg-12 style="text-align: center ; margin-bottom:0;">Copyright &copy 2019 CAR-EVERYTHING</h4>
 </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
