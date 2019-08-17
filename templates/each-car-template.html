@@ -135,6 +135,9 @@ nav{
     background-color:rgb(255, 255, 255);
     scroll-behavior: smooth;
   }
+  .main{
+    margin-top:20vh;
+  }
 
   .car-details-content h2 {
     border-bottom: 1px solid #ffd000;
@@ -142,6 +145,7 @@ nav{
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
+  
 
 
   .car-details-content h2 span {
@@ -302,7 +306,7 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
     </div>
   </nav>
 
-  <div class="row main justify-content-center">
+  <div class="row main justify-content-center "style="max-width:99.9vw">
       <div class="crossfade2">
 
           <figure ></figure>
@@ -317,8 +321,8 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
       
         </div>        
     <div class="col-lg-8">
-      <div class="car-details-content">
-        <h2> {%name%} <span class="price">Rent: <b>{%price%}$/day</b></span></h2>
+      <div class="car-details-content pl-5">
+        <h2  > {%name%} <span class="price">Rent: <b>{%price%}$/day</b></span></h2>
         <div id="carouselExampleFade" class="carousel slide carousel-fade col-lg-12" data-ride="carousel"
           data-interval="1000">
           <ol class="carousel-indicators">
@@ -326,15 +330,15 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
             <li data-target="#carouselExampleFade" data-slide-to="1"></li>
             <li data-target="#carouselExampleFade" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner">
+          <div class="carousel-inner ">
             <div class="carousel-item active">
-              <img class="d-block w-100  " src="img2" alt="First slide">
+              <img class="carousel-img  w-100 d-block  " src="img2" alt="First slide" >
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 " src="img3" alt="Second slide">
+              <img class="carousel-img  w-100 d-block " src="img3" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block  w-100" src="img4" alt="Third slide">
+              <img class="carousel-img  w-100 d-block" src="img4" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -436,8 +440,8 @@ background:linear-gradient(to top, rgb(129, 229, 247),white) ;
         </div>
       </div>
     </div>
-    <div class="col-lg-4">
-      <div class="sidebar-content-wrap m-t-50">
+    <div class="col-lg-4 mt-5">
+      <div class="sidebar-content-wrap ">
 
         <div class="single-sidebar">
           <h3>For More Informations</h3>
