@@ -35,9 +35,9 @@ module.exports.getallcars= async (req,res)=>{
      try{
         var a=" "; 
       await Carmodel.find({}).then((result)=>{
-        
-        for(var i=0;i<result.length;i++)
-      { console.log(result[i]);
+        var i;
+        for( i=0;i<result.length;i++)
+      { 
          let carcard1=carcard.replace(/{%name%}/g,result[i]["Name"]);
         carcard1=carcard1.replace(/{%price%}/g,result[i]["Rent"]);
         carcard1=carcard1.replace(/{%img1%}/g,result[i]["img1"]);
@@ -52,7 +52,7 @@ module.exports.getallcars= async (req,res)=>{
         {
         carcard1=carcard1.replace(/{%rating%}/g,'<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star unmark"></i>');
     }
-    else if(result[i]["Rating"]<4&&result[i]["Rating"]>=3)
+    else if(result[i]["Rating"]<4 && result[i]["Rating"]>=3)
     {
     carcard1=carcard1.replace(/{%rating%}/g,'<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star unmark"></i><i class="fa fa-star unmark"></i>');
 }   
@@ -64,8 +64,8 @@ else
 {
 carcard1=carcard1.replace(/{%rating%}/g,'<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star unmark"></i><i class="fa fa-star unmark"></i><i class="fa fa-star unmark"></i>');
 } 
-carcard1=carcard1.replace(/{%id%}/g,result[i]["_id"]);
-console.log(carcard1);
+carcard1=carcard1.replace(/{%id%}/g,result[i]["id"]);
+
 a = a+carcard1;
 
       }
@@ -91,6 +91,7 @@ a = a+carcard1;
         let carinfo=carinfo2+ ' ';
         let id=req.params["id"];
         Carmodel.findById(id).then((result)=>{
+           
            carinfo=carinfo.replace(/{%name%}/g,result["Name"]);
             carinfo=carinfo.replace(/{%price%}/g,result["Rent"]);
             carinfo=carinfo.replace(/{%bodytype%}/g,result["Bodytype"]);
@@ -101,9 +102,9 @@ a = a+carcard1;
             carinfo=carinfo.replace(/{%displacement%}/g,result["Displacement"]);
             carinfo=carinfo.replace(/{%description%}/g,result["Description"]);
             carinfo=carinfo.replace(/{%airbags%}/g,result["Airbags"]);
-            carinfo=carinfo.replace(/{%img2%}/g,result[i]["img2"]);
-            carinfo=carinfo.replace(/{%img3%}/g,result[i]["img3"]);
-            carinfo=carinfo.replace(/{%img4%}/g,result[i]["img4"]);
+             carinfo=carinfo.replace(/img2/g,result["img2"]);
+             carinfo=carinfo.replace(/img3/g,result["img3"]);
+             carinfo=carinfo.replace(/img4/g,result["img4"]);
             if(result["Rating"]<5&&result["Rating"]>=4)
             {
             carinfo=carinfo.replace(/{%rating%}/g,'<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>');

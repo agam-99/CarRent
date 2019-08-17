@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 nav{
-  background: linear-gradient(to right, rgb(129, 229, 247),rgb(216, 255, 252),rgb(129, 229, 247))
+  background: linear-gradient(to right, rgb(40, 100, 231),rgb(216, 255, 252),rgb(44, 110, 233))
 }
 .navbar-brand{
   font-size:5vh;
@@ -52,13 +52,13 @@ color:rgb(241, 245, 12);
   color:white;
 }
 .first-slide{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../public/img/home/21.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/home/21.jpg");
 }
 .second-slide{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../public/img/home/22.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/home/22.jpg");
 }
 .third-slide{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../public/img/home/23.JPG");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.541)), url("../img/home/23.JPG");
 }
  .carousel-container{
    margin-top: 7vh;
@@ -151,13 +151,13 @@ margin:0;
 
 
 }
-.crossfade  figure:nth-child(1) { background-image: url('..public/img/home/1.jpg'); }
+.crossfade  figure:nth-child(1) { background-image: url('../img/home/1.jpg'); }
  
 .crossfade  figure:nth-child(2) {
 
   animation-delay: 3s;
 
-  background-image: url('..public/img/home/2.jpg');
+  background-image: url('../img/home/2.jpg');
 
 }
 
@@ -167,7 +167,7 @@ margin:0;
 
   animation-delay: 6s;
 
-  background-image: url('..public/img/home/3.jpg');
+  background-image: url('../img/home/3.jpg');
 
 }
 
@@ -177,7 +177,7 @@ margin:0;
 
   animation-delay: 9s;
 
-  background-image: url('..public/img/home/4.jpg');
+  background-image: url('../img/home/4.jpg');
 
 }
 
@@ -187,7 +187,7 @@ margin:0;
 
   animation-delay: 12s;
 
-  background-image: url('..public/img/home/5.jpg');
+  background-image: url('../img/home/5.jpg');
 
 }
 
@@ -466,20 +466,20 @@ input[type="text"]::placeholder,input[type="tel"]::placeholder
 
 color: rgb(0, 0, 0);
    width: 65vw;
-   border:5px solid rgb(255, 230, 0);
+   border:5px solid rgb(255, 0, 0);
  background: rgb(255, 255, 255);
 }
 .btn1 {
-border:2px solid rgb(242, 245, 88);
+border:2px solid rgb(255, 0, 0);
 padding:0.5vh 1vh 0.5vh 1vh ;
 margin-left:1vw;
 margin-top:0.5vh;
 background: white;
 
-color:rgb(234, 236, 85);
+color:rgb(255, 0, 0);
 }
 .btn1:hover,.btn1:active{
-  background:rgb(239, 241, 67);
+  background:rgb(255, 0, 0);
   color:white;
 }
 /* .form-submit
@@ -558,13 +558,13 @@ background-repeat: repeat;
 
 
 }
-.crossfade1  figure:nth-child(1) { background-image: url('..public/img/home/21.jpg'); }
+.crossfade1  figure:nth-child(1) { background-image: url('../img/home/21.jpg'); }
  
 .crossfade1  figure:nth-child(2) {
 
   animation-delay: 3s;
 
-  background-image: url('..public/img/home/22.jpg');
+  background-image: url('../img/home/22.jpg');
 
 }
 
@@ -574,7 +574,7 @@ background-repeat: repeat;
 
   animation-delay: 6s;
 
-  background-image: url('..public/img/home/23.jpg');
+  background-image: url('../img/home/23.jpg');
 
 }
 
@@ -584,7 +584,7 @@ background-repeat: repeat;
 
   animation-delay: 9s;
 
-  background-image: url('..public/img/home/24.jpg');
+  background-image: url('../img/home/24.jpg');
 
 }
 
@@ -594,7 +594,7 @@ background-repeat: repeat;
 
   animation-delay: 12s;
 
-  background-image: url('..public/img/home/25.jpg');
+  background-image: url('../img/home/25.jpg');
 
 }
 
@@ -686,7 +686,7 @@ padding-bottom:3vmax;
 }
 .our-services{
  z-index:0;
-  background:linear-gradient(rgba(255, 254, 254, 0.74),rgb(95, 191, 236));  
+  background:linear-gradient( to top,rgba(255, 254, 254, 0.74),rgb(95, 191, 236) ,white);  
 
   max-width: 100vw;
 }
@@ -760,7 +760,7 @@ justify-content: space-around;   */
   /* min-width: 22vmax;
   max-width:22vmax;
   min-height:17vmax; */
-   border:5px solid rgb(255, 255, 255);
+   border:none;
   /* for firefox 31 */
   transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
@@ -770,9 +770,12 @@ justify-content: space-around;   */
 .logo{
   top:0;
   /* padding:15% 30%;  */
-  color:rgb(241, 245, 12);
+  color:rgba(255, 255, 255,0.7 );
   /* min-height:4.5vmax;
   max-height: 4.5vmax; */
+}
+.logo h3{
+  color:rgb(255, 0, 0);
 }
 /* back, initially hidden pane */
 /* .each-service-desc-title
@@ -792,9 +795,9 @@ justify-content: space-around;   */
   /* min-width: 22vmax;
   max-width:22vmax;
   min-height:17vmax; */
-  color:rgb(196, 143, 46);
+  color:rgb(196, 46, 46);
 
- border:3px solid rgb(241, 245, 12); 
+ border:none;
   
   background:transparent;
   transform: rotateY(180deg);
@@ -873,13 +876,13 @@ justify-content: space-around;   */
   
   
   }
-  .crossfade2  figure:nth-child(1) { background-image: url('..public/img/home/1.jpg'); }
+  .crossfade2  figure:nth-child(1) { background-image: url('../img/home/1.jpg'); }
    
   .crossfade2  figure:nth-child(2) {
   
     animation-delay: 3s;
   
-    background-image: url('..public/img/home/2.jpg');
+    background-image: url('../img/home/2.jpg');
   
   }
   
@@ -889,7 +892,7 @@ justify-content: space-around;   */
   
     animation-delay: 6s;
   
-    background-image: url('..public/img/home/3.jpg');
+    background-image: url('../img/home/3.jpg');
   
   }
   
@@ -899,7 +902,7 @@ justify-content: space-around;   */
   
     animation-delay: 9s;
   
-    background-image: url('..public/img/home/4.jpg');
+    background-image: url('../img/home/4.jpg');
   
   }
   
@@ -909,7 +912,7 @@ justify-content: space-around;   */
   
     animation-delay: 12s;
   
-    background-image: url('..public/img/home/5.jpg');
+    background-image: url('../img/home/5.jpg');
   
   }
   
@@ -999,7 +1002,7 @@ color:rgb(241, 245, 12);
 margin:0 !important;
 width:100%;
 
-background:linear-gradient( rgb(255, 255, 255),rgb(129, 229, 247));
+background:linear-gradient( to left,rgb(255, 255, 255),rgb(129, 229, 247));
 }
 .app-promo-info h3{
 
@@ -1076,17 +1079,31 @@ padding:3vw;
 margin-top:2vh;
 }
 footer{
-background:linear-gradient( rgb(129, 229, 247),white) ;
+background:linear-gradient( to right,rgb(129, 229, 247),white) ;
 }
 .footer-bottom h2{
     margin:0;
   }
+  /* .loader {
+    display:block;
+position:fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249,249,249);
+}
+.rest{
+  display:none;
+} */
+
 </style>
 </head>
 
 <body>
  
- 
+ <div class=loader></div>
       <!-- <div class="crossfade">
 
           <figure  class="crossfade-figure"></figure>
@@ -1549,10 +1566,10 @@ background:linear-gradient( rgb(129, 229, 247),white) ;
         <div class="store"><a href=# class=app-link><i class="fab fa-2x fa-apple"></i><p> Apple Store</p> </a></div>
       </div>
     </div>
-    <img class="mobile-app col-sm-8 col-md-9 col-lg-3 justify-self-center" src="img/home/mobile-app.png"></div>
+    <img class="mobile-app col-sm-8 col-md-9 col-lg-3 justify-self-center" src="../img/home/mobile-app.png"></div>
   
   <!-- <div class=section-spacing>
-    </div>  -->
+  </div>  </div>--> 
 </body>
 <footer>
   <div class= "row footer-top justify-content-around " style="width:99.9% !important">
@@ -1593,7 +1610,8 @@ background:linear-gradient( rgb(129, 229, 247),white) ;
 </footer>
 
   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
 <script>
 // var element1=document.querySelectorAll(".services");
     // var element2=document.querySelector(".each-service-logo");
@@ -1610,34 +1628,32 @@ background:linear-gradient( rgb(129, 229, 247),white) ;
     // });
     // });
     function heightset(class1,class2)
-    {   $(document).ready(function(){
+    {  
     
     
          var element1=document.querySelectorAll(class1);
         var element2=document.querySelector(class2);
            element1.forEach((element)=>{
             $(element).css('height',$(element2).height());
-            console.log($(element2).height());
-            console.log($(element).height());
+         
            })
          
-        })
+   
          
         
     }
     function heightset2(class1,class2)
-    {   $(document).ready(function(){
+    {   
     
     
          var element1=document.querySelectorAll(class1);
         var element2=document.querySelector(class2);
            
             $(element1).css('height',$(element2).height());
-            console.log($(element2).height());
-            console.log($(element).height());
+          
          
          
-        })
+     
          
         
     }
@@ -1648,7 +1664,7 @@ background:linear-gradient( rgb(129, 229, 247),white) ;
     heightset(".flipcontainer",".each-service-logo");
     
     function marginset(class1,class2)
-    {   $(document).ready(function(){
+    {  
     
     
          var element1=document.querySelectorAll(class1);
@@ -1656,29 +1672,29 @@ background:linear-gradient( rgb(129, 229, 247),white) ;
            element1.forEach((element)=>{
             var eleh=$(element2).height();
             $(element).css('margin-top',(-1.2*eleh));
-            console.log($(element2).height());
-            console.log($(element).css('margin-top'));
+       
            
-           })
+         
          
         })
          
         
     }
     /* ....................................*/
-    $(document).ready(()=>{
-        var element4=document.querySelector(".form-container");
-    var element3=document.querySelector(".our-services");
-    var element1=document.querySelector(".carousel-container");
-    var element2=document.querySelector(".form-innercontainer");
+function heightchange(class1,class2,class3,class4){
+        var element4=document.querySelector(class1);
+    var element3=document.querySelector(class2);
+    var element1=document.querySelector(class3);
+    var element2=document.querySelector(class4);
      $(element2).css('margin-top',-0.8*$(element2).height()); 
     $(element4).css('min-height',$(element2).height());
     // $(element4).css('margin-bottom',$(element2).height());
     
      $(element3).css('margin-top',$(element4).height());
     
-    
-    })
+}
+heightchange(".form-container",".our-services",".carousel-container",".form-innercontainer");
+  
     /* ....................................*/
     marginset(".each-service-desc-desc",".each-service-logo");
     
@@ -1691,18 +1707,17 @@ background:linear-gradient( rgb(129, 229, 247),white) ;
         var wintop     = $(window).scrollTop();
         var winheight=$(window).height();
         var winbottom= wintop+winheight;
-        console.log(winbottom);
+      
         const navheight=$(element4).height();
         var eletop = $(element).offset().top;
         var eleheight=$(element).height();
         var elebottom=eletop + eleheight;
-        console.log(elebottom);
+
           if(eletop>(wintop-eleheight) && elebottom<(winbottom+eleheight))
          { element.style.opacity=1;
           $(element).addClass(animation1); 
           
-          
-          //  console.log("yes");
+     
         }
          else
          
@@ -1718,11 +1733,15 @@ background:linear-gradient( rgb(129, 229, 247),white) ;
     
     })
     });
+    // $(document).ready(function(){
+    //   var element1= document.querySelector(".loader");
+    //   $(element1).css('display','none');
+    //   var element2= document.querySelector(".rest");
+    //  $(element2).css('display','block');
+});
     }
-    $(function () {
-      $('#datetimepicker1').datetimepicker();
-    });</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+   </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
