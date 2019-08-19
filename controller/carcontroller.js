@@ -1,5 +1,6 @@
 
 const Carmodel=require("../model/carmodel.js");
+const teammodel=require("../model/teammodel.js");
 const fs=require('fs');
 
 module.exports.gethome= (req,res)=>{
@@ -8,11 +9,82 @@ let home1=home+" ";
 
 res.end(home1);
 }
-module.exports.getteam=(req,res)=>{
-    let team=    fs.readFileSync("./static/team.html"); 
+module.exports.getteam= async(req,res)=>{
+    let team=    fs.readFileSync("./templates/team/team-template.html"); 
 let team1=team+" ";
+let teammin=fs.readFileSync("./templates/team/team-mem-mini.html");
+let teammin1=teammin+" ";
+let teambig=fs.readFileSync("./templates/team/team-mem-full.html");
+let teambig1=teambig + " ";
+try{
+    let a=" "; let b=" ";
+  await teammodel.find({}).then((result)=>{
+    var i;
+    for(i=0;i<result.length;i++)
+  { 
+     teammin=teammin1.replace(/{%name%}/g,result[i]["name"]);
+     teammin=teammin.replace(/{%img-min%}/g,result[i]["imagemin"]);
+     a=a+teammin;
+  }
+  for(i=0;i<result.length;i++) 
+  {
+    teambig=teambig1.replace(/{%name%}/g,result[i]["name"]);
+    teambig=teambig.replace(/{%img-full%}/g,result[i]["imagebig"]);
+    teambig=teambig.replace(/{%position%}/g,result[i]["position"]);
+    teambig=teambig.replace(/{%desc%}/g,result[i]["description"]);
+    b=b+teambig;
+  }
+  team=team1.replace(/{%team-mem-min-list%}/g,a);
+  team=team.replace(/{%team-mem-info%}/g,b);
+  res.end(team);
+})
+}
+ catch(err){
+     console.error(err);
+ }  
+   
 
-res.end(team1);
+
+};
+module.exports.addteammem = async (req,res)=>{
+    try{
+      
+   var result= await teammodel.create(req.body);
+  res.status(201).json({
+    result:result
+  })
+ }
+ catch(err)
+ {
+   console.error(err);
+
+ } 
+
+};
+module.exports.updateteammem=(req,res)=>{
+    let id=req.params["id"];
+    teammodel.findByIdAndUpdate(id,req.body,{new:true},(err,result)=>{
+    if(err)
+    {
+      res.status(403).json({
+        result:err
+      })
+      res.end()
+    }
+    res.status(201).json({
+      result:result
+    })
+    })
+};    
+module.exports.removeteammem=(req,res)=>{
+    let id=req.params["id"];
+
+    teammodel.findByIdAndDelete(id).then((result)=>
+    {
+      res.status(201).send("Team Member Details Removed");
+    }).catch((err)=>{
+      console.error(err);
+    })
 };
 module.exports.getaboutus=(req,res)=>{
     let aboutus=    fs.readFileSync("./static/aboutus.html"); 
@@ -20,17 +92,12 @@ let aboutus1=aboutus+" ";
 
 res.end(aboutus1);
 };
-module.exports.getcontact=(req,res)=>{
-    let contactus=    fs.readFileSync("./static/contactus.html"); 
-let contactus1=contactus+" ";
 
-res.end(contactus1);
-};
 
 module.exports.getallcars= async (req,res)=>{
-    var allcarpage2=fs.readFileSync('./templates/cars.html');
+    var allcarpage2=fs.readFileSync('./templates/cars/cars.html');
     var allcarpage=allcarpage2+" ";
-    var carcard2= fs.readFileSync('./templates/car-card.html');
+    var carcard2= fs.readFileSync('./templates/cars/car-card.html');
    var carcard=carcard2 +" ";
      try{
         var a=" "; 
@@ -87,7 +154,7 @@ a = a+carcard1;
 
     }
     module.exports.getcardetails=(req,res)=>{
-        let carinfo2=fs.readFileSync('./templates/each-car-template.html');
+        let carinfo2=fs.readFileSync('./templates/cars/each-car-template.html');
         let carinfo=carinfo2+ ' ';
         let id=req.params["id"];
         Carmodel.findById(id).then((result)=>{
@@ -127,7 +194,7 @@ else
             carinfo=carinfo.replace(/{%abs%}/g,' <i class="fas fa-2x fa-check"></i> ');
             }
             else{
-                carinfo=carinfo1.replace(/{%abs%}/g,'<i class="fas fa-2x fa-times"></i> ');
+                carinfo=carinfo.replace(/{%abs%}/g,'<i class="fas fa-2x fa-times"></i> ');
             }
             if(result["CruiseControl"])
             {
@@ -141,7 +208,7 @@ else
             carinfo=carinfo.replace(/{%climatecontrol%}/g,' <i class="fas fa-2x fa-check"></i> ');
             }
             else{
-                carinfo=carinfo1.replace(/{%climatecontrol%}/g,'<i class="fas fa-2x fa-times"></i> ');
+                carinfo=carinfo.replace(/{%climatecontrol%}/g,'<i class="fas fa-2x fa-times"></i> ');
             }
             if(result["AlloyWheels"])
             {
@@ -162,7 +229,7 @@ else
             carinfo=carinfo.replace(/{%steeringmounts%}/g,' <i class="fas fa-2x fa-check"></i> ');
             }
             else{
-                carinfo=carinfo1.replace(/{%steeringmounts%}/g,'<i class="fas fa-2x fa-times"></i> ');
+                carinfo=carinfo.replace(/{%steeringmounts%}/g,'<i class="fas fa-2x fa-times"></i> ');
             }
             if(result["Ways6AdjustSeats"])
             {
@@ -204,5 +271,34 @@ else
       } 
 
     };
-    module.exports.updatecar=(req,res)=>{};    
-    module.exports.removecar=(req,res)=>{};
+    module.exports.updatecar=(req,res)=>{
+        let id=req.params["id"];
+        Carmodel.findByIdAndUpdate(id,req.body,{new:true},(err,result)=>{
+        if(err)
+        {
+          res.status(403).json({
+            result:err
+          })
+          res.end()
+        }
+        res.status(201).json({
+          result:result
+        })
+        })
+    };    
+    module.exports.removecar=(req,res)=>{
+        let id=req.params["id"];
+
+        Carmodel.findByIdAndDelete(id).then((result)=>
+        {
+          res.status(201).send("Car Details Removed");
+        }).catch((err)=>{
+          console.error(err);
+        })
+    };
+    module.exports.getcontact=(req,res)=>{
+        let contactus=    fs.readFileSync("./static/contactus.html"); 
+    let contactus1=contactus+" ";
+    
+    res.end(contactus1);
+    };
